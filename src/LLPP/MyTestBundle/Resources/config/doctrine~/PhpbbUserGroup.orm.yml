@@ -1,0 +1,29 @@
+LLPP\MyTestBundle\Entity\PhpbbUserGroup:
+    type: entity
+    table: phpbb_user_group
+    indexes:
+        user_id:
+            columns:
+                - user_id
+    id:
+        groupId:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: group_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        userId:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: user_id
+        userPending:
+            type: boolean
+            nullable: true
+            column: user_pending
+    lifecycleCallbacks: {  }

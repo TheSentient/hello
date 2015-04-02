@@ -1,0 +1,24 @@
+LLPP\MyTestBundle\Entity\Categoriaprodotti:
+    type: entity
+    table: categoriaProdotti
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        categoria:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        sottocategoria:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+    lifecycleCallbacks: {  }

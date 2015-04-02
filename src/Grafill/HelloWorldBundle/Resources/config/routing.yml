@@ -1,0 +1,3 @@
+grafill_ciao:
+    path:     /helloworld
+    defaults: { _controller: GrafillHelloWorldBundle:Default:index }

@@ -1,0 +1,40 @@
+LLPP\MyTestBundle\Entity\PhpbbTopicsWatch:
+    type: entity
+    table: phpbb_topics_watch
+    indexes:
+        topic_id:
+            columns:
+                - topic_id
+        user_id:
+            columns:
+                - user_id
+        notify_status:
+            columns:
+                - notify_status
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        topicId:
+            type: integer
+            nullable: false
+            unsigned: true
+            default: '0'
+            column: topic_id
+        userId:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: user_id
+        notifyStatus:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: notify_status
+    lifecycleCallbacks: {  }

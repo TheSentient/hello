@@ -1,0 +1,74 @@
+LLPP\JournalBundle\Entity\News:
+    type: entity
+    table: null
+    repositoryClass: LLPP\JournalBundle\Entity\NewsRepository
+    manyToOne:
+        categoria:
+            targetEntity: Categoria
+            inversedBy: news
+            joinColumn:
+                name: categoria_id
+                referencedColumnName: id
+    manyToMany:
+        tags:
+            targetEntity: Tag
+            inversedBy: news
+            joinTable:
+                name: news_tags
+                joinColumns:
+                    news_id:
+                        referencedColumnName: id
+                inverseJoinColumns:
+                    tag_id:
+                        referencedColumnName: id
+        linksCorrelati:
+            targetEntity: LinkCorrelato
+            inversedBy: news
+            joinTable:
+                name: news_linkscorrelati
+                joinColumns:
+                    news_id:
+                        referencedColumnName: id
+                inverseJoinColumns:
+                    linkcorrelato_id:
+                        referencedColumnName: id
+        filesAllegati:
+            targetEntity: FileAllegato
+            inversedBy: news
+            joinTable:
+                name: news_filesallegati
+                joinColumns:
+                    news_id:
+                        referencedColumnName: id
+                inverseJoinColumns:
+                    fileallegato_id:
+                        referencedColumnName: id
+        normative:
+            targetEntity: Normativa
+            inversedBy: news
+            joinTable:
+                name: news_normative
+                joinColumns:
+                    news_id:
+                        referencedColumnName: id
+                inverseJoinColumns:
+                    normativa_id:
+                        referencedColumnName: id
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        data:
+            type: date
+        titolo:
+            type: string
+            length: 255
+        contenuto:
+            type: text
+        permalink:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

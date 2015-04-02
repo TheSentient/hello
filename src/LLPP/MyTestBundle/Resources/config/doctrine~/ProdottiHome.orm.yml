@@ -1,0 +1,49 @@
+LLPP\MyTestBundle\Entity\ProdottiHome:
+    type: entity
+    table: prodotti_home
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        nome:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+        categoria:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+        descrizione:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        img:
+            type: string
+            nullable: true
+            length: 90
+            fixed: false
+        evidenza:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            default: NO
+        link:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        azienda:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+    lifecycleCallbacks: {  }

@@ -1,0 +1,25 @@
+LLPP\MyTestBundle\Entity\TipoNorme:
+    type: entity
+    table: tipo_norme
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        tipoNorma:
+            type: string
+            nullable: true
+            length: 120
+            fixed: false
+            column: tipo_norma
+        nomeEsteso:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+            column: nome_esteso
+    lifecycleCallbacks: {  }

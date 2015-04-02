@@ -1,0 +1,127 @@
+LLPP\MyTestBundle\Entity\Bandidettagli:
+    type: entity
+    table: bandiDettagli
+    id:
+        idbando:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: idBando
+            generator:
+                strategy: IDENTITY
+    fields:
+        idtipologia:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idTipologia
+        titolo:
+            type: text
+            nullable: false
+            length: 65535
+            fixed: false
+            column: Titolo
+        entebanditore:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: enteBanditore
+        indirizzo:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        cap:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: CAP
+        citta:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Citta
+        provincia:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: Provincia
+        regione:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Regione
+        tel:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: Tel
+        fax:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: Fax
+        pec:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: PEC
+        sitoWeb:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: sito_web
+        note:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: Note
+        codicecig:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+            column: CodiceCIG
+        codicecup:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+            column: codiceCUP
+        codicecpv:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+            column: codiceCPV
+        descrizione:
+            type: text
+            nullable: false
+            length: 65535
+            fixed: false
+            column: Descrizione
+        scadenza:
+            type: date
+            nullable: false
+            column: Scadenza
+        contatore:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+        dataInserimento:
+            type: date
+            nullable: true
+            column: data_inserimento
+    lifecycleCallbacks: {  }

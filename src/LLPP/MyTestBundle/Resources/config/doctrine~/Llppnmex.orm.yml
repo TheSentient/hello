@@ -1,0 +1,74 @@
+LLPP\MyTestBundle\Entity\Llppnmex:
+    type: entity
+    table: LLPPNMex
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        guid:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: GUID
+        guidmittente:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: guidMittente
+        guiddestinatario:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: guidDestinatario
+        testo:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: Testo
+        tipo:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            column: Tipo
+        refguid:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: RefGuid
+        datatime:
+            type: datetime
+            nullable: true
+            column: DataTime
+        isnew:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            column: IsNew
+        deletedsender:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: NO
+            column: DeletedSender
+        deletedreceiver:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: NO
+            column: DeletedReceiver
+    lifecycleCallbacks: {  }

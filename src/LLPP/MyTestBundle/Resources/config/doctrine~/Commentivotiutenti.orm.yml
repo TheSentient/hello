@@ -1,0 +1,19 @@
+LLPP\MyTestBundle\Entity\Commentivotiutenti:
+    type: entity
+    table: commentiVotiUtenti
+    id:
+        commentoId:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: commento_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        userId:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: user_id
+    lifecycleCallbacks: {  }

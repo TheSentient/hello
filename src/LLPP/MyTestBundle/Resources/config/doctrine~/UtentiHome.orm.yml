@@ -1,0 +1,78 @@
+LLPP\MyTestBundle\Entity\UtentiHome:
+    type: entity
+    table: utenti_home
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        nome:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+        cognome:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+        professione:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+        prov:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+        reg:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+        email:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+        titolo:
+            type: string
+            nullable: true
+            length: 90
+            fixed: false
+        sottotitolo:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+        categoria:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+        testa:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        nc:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+        esn:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+        acura:
+            type: string
+            nullable: true
+            length: 90
+            fixed: false
+    lifecycleCallbacks: {  }

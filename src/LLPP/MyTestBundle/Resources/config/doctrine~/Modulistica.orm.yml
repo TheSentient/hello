@@ -1,0 +1,48 @@
+LLPP\MyTestBundle\Entity\Modulistica:
+    type: entity
+    table: modulistica
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        tipo:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+        modulo:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        sottotipo:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+        sottomodulo:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        codice:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+        descrizione:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        link:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+    lifecycleCallbacks: {  }

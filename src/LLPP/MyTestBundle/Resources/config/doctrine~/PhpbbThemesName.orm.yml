@@ -1,0 +1,195 @@
+LLPP\MyTestBundle\Entity\PhpbbThemesName:
+    type: entity
+    table: phpbb_themes_name
+    id:
+        themesId:
+            type: smallint
+            nullable: false
+            unsigned: true
+            default: '0'
+            id: true
+            column: themes_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        trColor1Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: tr_color1_name
+        trColor2Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: tr_color2_name
+        trColor3Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: tr_color3_name
+        trClass1Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: tr_class1_name
+        trClass2Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: tr_class2_name
+        trClass3Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: tr_class3_name
+        thColor1Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: th_color1_name
+        thColor2Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: th_color2_name
+        thColor3Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: th_color3_name
+        thClass1Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: th_class1_name
+        thClass2Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: th_class2_name
+        thClass3Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: th_class3_name
+        tdColor1Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: td_color1_name
+        tdColor2Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: td_color2_name
+        tdColor3Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: td_color3_name
+        tdClass1Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: td_class1_name
+        tdClass2Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: td_class2_name
+        tdClass3Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: td_class3_name
+        fontface1Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: fontface1_name
+        fontface2Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: fontface2_name
+        fontface3Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: fontface3_name
+        fontsize1Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: fontsize1_name
+        fontsize2Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: fontsize2_name
+        fontsize3Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: fontsize3_name
+        fontcolor1Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: fontcolor1_name
+        fontcolor2Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: fontcolor2_name
+        fontcolor3Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: fontcolor3_name
+        spanClass1Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: span_class1_name
+        spanClass2Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: span_class2_name
+        spanClass3Name:
+            type: string
+            nullable: true
+            length: 50
+            fixed: true
+            column: span_class3_name
+    lifecycleCallbacks: {  }

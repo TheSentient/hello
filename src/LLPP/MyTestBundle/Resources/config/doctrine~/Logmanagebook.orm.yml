@@ -1,0 +1,24 @@
+LLPP\MyTestBundle\Entity\Logmanagebook:
+    type: entity
+    table: logManageBook
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        editore:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+        pass:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+    lifecycleCallbacks: {  }

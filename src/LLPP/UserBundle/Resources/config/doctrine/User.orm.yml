@@ -1,0 +1,11 @@
+LLPP\UserBundle\Entity\User:
+    type: entity
+    table: user_tb
+    repositoryClass: LLPP\UserBundle\Entity\UserRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }

@@ -1,0 +1,48 @@
+LLPP\MyTestBundle\Entity\Parametrisondaggio:
+    type: entity
+    table: parametriSondaggio
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        titolo:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        testocompleto:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: testoCompleto
+        concorso:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: NO
+        idconcorso:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idConcorso
+        home:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: NO
+        idcorrelati:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: idCorrelati
+    lifecycleCallbacks: {  }

@@ -1,0 +1,28 @@
+LLPP\MyTestBundle\Entity\PhpbbConfirm:
+    type: entity
+    table: phpbb_confirm
+    id:
+        sessionId:
+            type: string
+            nullable: false
+            length: 32
+            fixed: true
+            default: ''
+            id: true
+            column: session_id
+        confirmId:
+            type: string
+            nullable: false
+            length: 32
+            fixed: true
+            default: ''
+            id: true
+            column: confirm_id
+    fields:
+        code:
+            type: string
+            nullable: false
+            length: 6
+            fixed: true
+            default: ''
+    lifecycleCallbacks: {  }

@@ -1,0 +1,46 @@
+<?php
+
+namespace Grafill\ManagerBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * ArchivioCategorie
+ *
+ * @ORM\Table(name="archivio_categorie")
+ * @ORM\Entity
+ */
+class ArchivioCategorie
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="codice", type="string", length=20, nullable=true)
+     */
+    private $codice;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="categoria", type="string", length=120, nullable=true)
+     */
+    private $categoria;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="sottocategoria", type="string", length=200, nullable=true)
+     */
+    private $sottocategoria;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+
+}

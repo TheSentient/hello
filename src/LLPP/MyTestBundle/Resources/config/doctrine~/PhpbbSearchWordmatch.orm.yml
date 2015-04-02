@@ -1,0 +1,37 @@
+LLPP\MyTestBundle\Entity\PhpbbSearchWordmatch:
+    type: entity
+    table: phpbb_search_wordmatch
+    indexes:
+        post_id:
+            columns:
+                - post_id
+        word_id:
+            columns:
+                - word_id
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        postId:
+            type: integer
+            nullable: false
+            unsigned: true
+            default: '0'
+            column: post_id
+        wordId:
+            type: integer
+            nullable: false
+            unsigned: true
+            default: '0'
+            column: word_id
+        titleMatch:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: title_match
+    lifecycleCallbacks: {  }

@@ -1,0 +1,201 @@
+LLPP\MyTestBundle\Entity\ClientiNetwork:
+    type: entity
+    table: clienti_network
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        cognome:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Cognome
+        nome:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Nome
+        username:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Username
+        password:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Password
+        professione:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Professione
+        societa:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Societa
+        codiceFiscale:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: codice_fiscale
+        partitaIva:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: partita_iva
+        indirizzo:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            default: ''
+            column: Indirizzo
+        cap:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            default: '0'
+            column: Cap
+        citta:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Citta
+        provincia:
+            type: string
+            nullable: false
+            length: 4
+            fixed: false
+            default: ''
+            column: Provincia
+        regione:
+            type: string
+            nullable: true
+            length: 120
+            fixed: false
+            column: Regione
+        telefono:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Telefono
+        fax:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Fax
+        email:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Email
+        trattDati:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: SI
+            column: Tratt_dati
+        tipoSpedizione:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: tipo_spedizione
+        tipoPagamento:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: tipo_pagamento
+        tipoAccount:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            default: CMPL
+            column: tipo_account
+        cognomeSped:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: cognome_sped
+        nomeSped:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: nome_sped
+        indirizzoSped:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+            column: indirizzo_sped
+        cittaSped:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+            column: citta_sped
+        capSped:
+            type: string
+            nullable: true
+            length: 7
+            fixed: false
+            column: cap_sped
+        provSped:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: prov_sped
+        llppCode1:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: llpp_code1
+        llppCode2:
+            type: string
+            nullable: true
+            length: 8
+            fixed: false
+            column: llpp_code2
+        attivo:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: SI
+    lifecycleCallbacks: {  }

@@ -1,0 +1,42 @@
+LLPP\MyTestBundle\Entity\FasiShop:
+    type: entity
+    table: fasi_shop
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        sessione:
+            type: string
+            nullable: true
+            length: 120
+            fixed: false
+        registrazione:
+            type: boolean
+            nullable: true
+        logIn:
+            type: boolean
+            nullable: true
+            column: log_in
+        idCliente:
+            type: bigint
+            nullable: true
+            unsigned: false
+            column: id_cliente
+        sendOrder:
+            type: boolean
+            nullable: true
+            column: send_order
+        pagamentoCc:
+            type: boolean
+            nullable: true
+            column: pagamento_cc
+        tipoPagamento:
+            type: boolean
+            nullable: true
+            column: tipo_pagamento
+    lifecycleCallbacks: {  }

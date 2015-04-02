@@ -1,0 +1,34 @@
+linkcorrelato:
+    path:     /
+    defaults: { _controller: "LLPPJournalBundle:LinkCorrelato:index" }
+
+linkcorrelato_ajax:
+    path:     /
+    defaults: { _controller: "LLPPJournalBundle:LinkCorrelato:indexAjax" }
+
+linkcorrelato_show:
+    path:     /{id}/show
+    defaults: { _controller: "LLPPJournalBundle:LinkCorrelato:show" }
+
+linkcorrelato_new:
+    path:     /new
+    defaults: { _controller: "LLPPJournalBundle:LinkCorrelato:new" }
+
+linkcorrelato_create:
+    path:     /create
+    defaults: { _controller: "LLPPJournalBundle:LinkCorrelato:create" }
+    requirements: { _method: post }
+
+linkcorrelato_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "LLPPJournalBundle:LinkCorrelato:edit" }
+
+linkcorrelato_update:
+    path:     /{id}/update
+    defaults: { _controller: "LLPPJournalBundle:LinkCorrelato:update" }
+    requirements: { _method: post|put }
+
+linkcorrelato_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "LLPPJournalBundle:LinkCorrelato:delete" }
+    requirements: { _method: post|delete }

@@ -1,0 +1,46 @@
+<?php
+
+namespace Grafill\ManagerBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Bundle
+ *
+ * @ORM\Table(name="bundle")
+ * @ORM\Entity
+ */
+class Bundle
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nome", type="string", length=100, nullable=true)
+     */
+    private $nome;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="data_inizio", type="date", nullable=true)
+     */
+    private $dataInizio;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="data_fine", type="date", nullable=true)
+     */
+    private $dataFine;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+
+}

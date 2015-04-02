@@ -1,0 +1,3 @@
+llpp_admin_content_manager_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: LLPPAdminContentManagerBundle:Default:index }

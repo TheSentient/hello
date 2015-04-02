@@ -1,0 +1,84 @@
+LLPP\MyTestBundle\Entity\Soa2006:
+    type: entity
+    table: soa2006
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        cognome:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        nome:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        professione:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        societa:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        piva:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+        indirizzo:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        cap:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+        citta:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        prov:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+        regione:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        tel:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+        fax:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+        email:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+        llppCode1:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: llpp_code1
+    lifecycleCallbacks: {  }

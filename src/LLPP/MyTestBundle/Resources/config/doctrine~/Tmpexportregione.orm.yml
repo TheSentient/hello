@@ -1,0 +1,23 @@
+LLPP\MyTestBundle\Entity\Tmpexportregione:
+    type: entity
+    table: tmpExportRegione
+    uniqueConstraints:
+        indirizzo:
+            columns:
+                - indirizzo
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        indirizzo:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+    lifecycleCallbacks: {  }

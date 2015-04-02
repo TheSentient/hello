@@ -1,0 +1,105 @@
+h3
+    color: $head-color
+    margin: 0
+
+article
+    margin-top: 20px
+    
+article, article > .row > div
+    padding-left: 0 !important
+    padding-right: 0 !important
+
+.article-section
+    margin-left: 20px
+    font-size: 20px
+    +app-font-style(700)
+
+.article-header
+    .left-side
+        +custom-border(bottom)
+    .right-side
+        +custom-border(top)
+        padding-left: 0 !important
+
+.article-content
+    > .left-side
+        padding-right: 10px !important
+        border-right: 1px solid #eee
+    > .right-side
+        padding-left: 10px !important
+    img
+        width: 100%
+
+.news-big-preview
+    .row
+        margin-bottom: 10px !important
+    .news-category
+        font-size: 18px !important
+        padding: 4px 3px 0 6px !important
+        height: 22px
+        background: $light-back
+        color: $head-color
+        +app-font-style(700)
+    .news-comments
+        padding: 4px 0 0 20px !important
+    .news-social
+        padding: 0 !important
+        text-align: right
+        font-size: 21px
+    .news-image
+        position: relative
+    .news-title
+        +journal-font-style()
+        font-size: 26px !important
+        position: absolute
+        padding: 3px 15px 5px
+        bottom: 0
+        margin: 0
+        color: white
+        background: rgba(150,150,150,.7)
+
+.news-small-preview
+    background-color: #ddd
+    .news-top-bar > span
+        height: 18px
+    .news-category
+        background-color: white
+        position: relative
+        padding: 0 !important
+        h5
+            +app-font-style(700, 12px, $head-color)
+            margin: 5px 0
+        &:after
+            content: ""
+            position: absolute
+            top: 0px
+            right: 0px
+            border-style: solid
+            border-width: 18px 10px 0px 0px
+            border-color: transparent #ddd
+            display: block
+            width: 0
+            z-index: 1
+    .news-comments, .news-social
+        text-align: right
+        padding: 2px 2px 0 0 !important
+    .row
+        margin-bottom: 0 !important
+        border-bottom: 1px dashed #ccc
+    .left-side, .right-side
+        padding: 10px !important
+    .right-side
+        padding-left: 0
+        h3
+            +journal-font-style($size: 12px, $color: #999)
+            margin: 7px 0
+
+.article-content.bottom
+    .bottom-smalls-lateral:nth-child(1)
+        padding-right: 10px !important
+    .bottom-smalls-lateral:nth-child(2)
+        padding-left: 10px !important
+    .bottom-smalls-central
+        padding-right: 10px !important
+        padding-right: 10px !important
+

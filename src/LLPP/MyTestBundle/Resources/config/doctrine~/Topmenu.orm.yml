@@ -1,0 +1,53 @@
+LLPP\MyTestBundle\Entity\Topmenu:
+    type: entity
+    table: topMenu
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        titolo:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        isparent:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            default: SI
+            column: isParent
+        ischild:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            default: NO
+            column: isChild
+        parent:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        ordine:
+            type: integer
+            nullable: true
+            unsigned: false
+        link:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        target:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            default: _self
+    lifecycleCallbacks: {  }

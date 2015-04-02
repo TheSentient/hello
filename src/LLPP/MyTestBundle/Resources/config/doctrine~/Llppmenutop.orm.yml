@@ -1,0 +1,41 @@
+LLPP\MyTestBundle\Entity\Llppmenutop:
+    type: entity
+    table: llppMenuTop
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        testomenu:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: testoMenu
+        tipo:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+        testopadre:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: NESSUNO
+            column: testoPadre
+        ordine:
+            type: integer
+            nullable: true
+            unsigned: false
+        link:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+    lifecycleCallbacks: {  }

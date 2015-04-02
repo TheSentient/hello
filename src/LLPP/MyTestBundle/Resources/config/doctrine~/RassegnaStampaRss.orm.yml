@@ -1,0 +1,28 @@
+LLPP\MyTestBundle\Entity\RassegnaStampaRss:
+    type: entity
+    table: rassegna_stampa_rss
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        sito:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+        categorie:
+            type: string
+            nullable: true
+            length: 120
+            fixed: false
+        link:
+            type: string
+            nullable: true
+            length: 150
+            fixed: false
+    lifecycleCallbacks: {  }

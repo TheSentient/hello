@@ -1,0 +1,75 @@
+LLPP\MyTestBundle\Entity\ArchivioNewsletter:
+    type: entity
+    table: archivio_newsletter
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        tipo:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            default: INFORMATIVA
+        azienda:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: LavoriPubblici.it
+        titolo:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        numero:
+            type: integer
+            nullable: true
+            unsigned: false
+        anno:
+            type: integer
+            nullable: true
+            unsigned: false
+        data:
+            type: date
+            nullable: true
+        imagine:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        file:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        idazienda:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idAzienda
+        emailinviate:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: emailInviate
+        statisticheattive:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            default: NO
+            column: statisticheAttive
+        overviewlinkattivo:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: NO
+            column: overviewLinkAttivo
+    lifecycleCallbacks: {  }

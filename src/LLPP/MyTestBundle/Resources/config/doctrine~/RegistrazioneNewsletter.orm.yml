@@ -1,0 +1,38 @@
+LLPP\MyTestBundle\Entity\RegistrazioneNewsletter:
+    type: entity
+    table: registrazione_newsletter
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        regione:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+        email:
+            type: string
+            nullable: true
+            length: 150
+            fixed: false
+        professione:
+            type: string
+            nullable: true
+            length: 150
+            fixed: false
+        quando:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+        vero:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            default: NO
+    lifecycleCallbacks: {  }

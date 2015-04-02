@@ -1,0 +1,69 @@
+LLPP\MyTestBundle\Entity\Commenti:
+    type: entity
+    table: commenti
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        idNews:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: id_news
+        email:
+            type: string
+            nullable: true
+            length: 90
+            fixed: false
+        titolo:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        testo:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        data:
+            type: date
+            nullable: true
+        nick:
+            type: string
+            nullable: true
+            length: 90
+            fixed: false
+        pubbl:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            default: SI
+        indirizzo:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        votiPositivi:
+            type: integer
+            nullable: true
+            unsigned: false
+            default: '0'
+            column: voti_positivi
+        votiNegativi:
+            type: integer
+            nullable: true
+            unsigned: false
+            default: '0'
+            column: voti_negativi
+        parent:
+            type: integer
+            nullable: true
+            unsigned: false
+    lifecycleCallbacks: {  }

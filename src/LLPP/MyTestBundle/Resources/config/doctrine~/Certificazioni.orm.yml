@@ -1,0 +1,19 @@
+LLPP\MyTestBundle\Entity\Certificazioni:
+    type: entity
+    table: certificazioni
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        nomeCertificazione:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+            column: nome_certificazione
+    lifecycleCallbacks: {  }

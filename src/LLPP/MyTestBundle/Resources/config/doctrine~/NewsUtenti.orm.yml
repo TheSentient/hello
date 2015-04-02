@@ -1,0 +1,30 @@
+LLPP\MyTestBundle\Entity\NewsUtenti:
+    type: entity
+    table: news_utenti
+    uniqueConstraints:
+        user:
+            columns:
+                - user
+                - pass
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: true
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        user:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+        pass:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+    lifecycleCallbacks: {  }

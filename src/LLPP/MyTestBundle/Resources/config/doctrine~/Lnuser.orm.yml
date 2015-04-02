@@ -1,0 +1,51 @@
+LLPP\MyTestBundle\Entity\Lnuser:
+    type: entity
+    table: lnUser
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idCliente:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: id_cliente
+        info:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        interessi:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        occupazione:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        titolostudio:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: titoloStudio
+        foto:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        campidamostrare:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: campiDaMostrare
+    lifecycleCallbacks: {  }

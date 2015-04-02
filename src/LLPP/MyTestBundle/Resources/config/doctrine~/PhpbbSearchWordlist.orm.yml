@@ -1,0 +1,30 @@
+LLPP\MyTestBundle\Entity\PhpbbSearchWordlist:
+    type: entity
+    table: phpbb_search_wordlist
+    indexes:
+        word_id:
+            columns:
+                - word_id
+    id:
+        wordText:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            id: true
+            column: word_text
+            generator:
+                strategy: IDENTITY
+    fields:
+        wordId:
+            type: integer
+            nullable: false
+            unsigned: true
+            column: word_id
+        wordCommon:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: word_common
+    lifecycleCallbacks: {  }

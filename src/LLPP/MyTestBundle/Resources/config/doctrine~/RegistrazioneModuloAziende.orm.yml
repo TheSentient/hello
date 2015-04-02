@@ -1,0 +1,96 @@
+LLPP\MyTestBundle\Entity\RegistrazioneModuloAziende:
+    type: entity
+    table: registrazione_modulo_aziende
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        idAzienda:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: id_azienda
+        nomeAzienda:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+            column: nome_azienda
+        regioneSociale:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+            column: regione_sociale
+        nome:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+        cognome:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+        professione:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+        indirizzo:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+        cap:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+        citta:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+        prov:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+        regione:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+        telefono:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+        email:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+        testo:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        html:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        approvato:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            default: NO
+    lifecycleCallbacks: {  }

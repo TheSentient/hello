@@ -1,0 +1,115 @@
+LLPP\MyTestBundle\Entity\Richiestainformazioniaziende:
+    type: entity
+    table: richiestaInformazioniAziende
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        uid:
+            type: string
+            nullable: true
+            length: 38
+            fixed: false
+            column: UID
+        idAzienda:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: id_azienda
+        nomeAzienda:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+            column: nome_azienda
+        regioneSociale:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+            column: regione_sociale
+        nome:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+        cognome:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+        professione:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+        indirizzo:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+        cap:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+        citta:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+        prov:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+        regione:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+        telefono:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+        email:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+        testo:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        html:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        newsletter:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+        prodotti:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        data:
+            type: date
+            nullable: true
+        inviata:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: NO
+    lifecycleCallbacks: {  }

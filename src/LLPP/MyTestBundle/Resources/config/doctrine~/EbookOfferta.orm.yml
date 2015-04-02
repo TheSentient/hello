@@ -1,0 +1,54 @@
+LLPP\MyTestBundle\Entity\EbookOfferta:
+    type: entity
+    table: ebook_offerta
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        isbn:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        prezzo:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+        titolo:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        descrizione:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        numeroPagine:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: numero_pagine
+        dimensioneEpub:
+            type: string
+            nullable: true
+            length: 11
+            fixed: false
+            column: dimensione_epub
+        impression:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+        click:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+    lifecycleCallbacks: {  }

@@ -1,0 +1,19 @@
+{% extends '::base.html.twig' %}
+
+
+{% block body -%}
+
+        <h1>Questo è l'elenco dell'articolo</h1>
+
+        <h2>Id dell'articolo {{articolo.id}} -- {{articolo.sottotitolo}}   </h2>
+
+        <ul>
+
+
+        	 {% for articolo in articolo.categorie.0.articoli %}
+				<li>{{ articolo.sottotitolo }}</li>
+				{% endfor %}
+        		</ul>
+
+
+{% endblock %}

@@ -1,0 +1,33 @@
+LLPP\MyTestBundle\Entity\Tblloguser28022012:
+    type: entity
+    table: tblLogUser28022012
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idcliente:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idCliente
+        tipo:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        riferimento:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        quando:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+    lifecycleCallbacks: {  }

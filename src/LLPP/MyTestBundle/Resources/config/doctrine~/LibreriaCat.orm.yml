@@ -1,0 +1,36 @@
+LLPP\MyTestBundle\Entity\LibreriaCat:
+    type: entity
+    table: LIBRERIA_CAT
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        argomento:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+        categorie:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+        icona:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        toptenhome:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: NO
+            column: topTenHome
+    lifecycleCallbacks: {  }

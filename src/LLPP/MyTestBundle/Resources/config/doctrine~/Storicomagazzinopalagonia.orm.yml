@@ -1,0 +1,42 @@
+LLPP\MyTestBundle\Entity\Storicomagazzinopalagonia:
+    type: entity
+    table: storicoMagazzinoPalagonia
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        distributore:
+            type: integer
+            nullable: true
+            unsigned: false
+        articolo:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+        tipomovimento:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            column: tipoMovimento
+        qta:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+        data:
+            type: date
+            nullable: true
+        note:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+    lifecycleCallbacks: {  }

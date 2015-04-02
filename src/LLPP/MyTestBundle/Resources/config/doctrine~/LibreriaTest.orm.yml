@@ -1,0 +1,273 @@
+LLPP\MyTestBundle\Entity\LibreriaTest:
+    type: entity
+    table: LIBRERIA_TEST
+    indexes:
+        Editore:
+            columns:
+                - EDITORE
+        Anno:
+            columns:
+                - ANNO
+        categoria:
+            columns:
+                - ARGOMENTO
+        ID:
+            columns:
+                - ID
+    uniqueConstraints:
+        CODICE:
+            columns:
+                - CODICE
+    id:
+        codice:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            id: true
+            column: CODICE
+            generator:
+                strategy: IDENTITY
+    fields:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: ID
+        autore:
+            type: string
+            nullable: true
+            length: 90
+            fixed: false
+            column: AUTORE
+        titolo:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+            column: TITOLO
+        titoloRidotto:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+            column: TITOLO_RIDOTTO
+        anno:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+            column: ANNO
+        editore:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: EDITORE
+        argomento:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            default: ''
+            column: ARGOMENTO
+        novita:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: NO
+            column: NOVITA
+        descrizione:
+            type: text
+            nullable: true
+            length: null
+            fixed: false
+            column: DESCRIZIONE
+        prezzo:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 2
+            column: PREZZO
+        prezzoOfferta:
+            type: float
+            nullable: true
+            precision: 9
+            scale: 3
+            column: PREZZO_OFFERTA
+        scadenza:
+            type: date
+            nullable: true
+            column: SCADENZA
+        offerta:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            default: NO
+            column: OFFERTA
+        collana:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: COLLANA
+        categorie:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+            column: CATEGORIE
+        cat1:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: CAT1
+        sostitutivi:
+            type: string
+            nullable: true
+            length: 120
+            fixed: false
+            column: SOSTITUTIVI
+        cat3:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: CAT3
+        cd:
+            type: integer
+            nullable: true
+            unsigned: false
+            default: '0'
+            column: CD
+        img:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+            column: IMG
+        demo:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+            column: DEMO
+        promozione:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: NO
+            column: PROMOZIONE
+        testiCorrelati:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+            column: TESTI_CORRELATI
+        indiceLibro:
+            type: text
+            nullable: true
+            length: null
+            fixed: false
+            column: INDICE_LIBRO
+        speseSpedizione:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            default: SI
+            column: SPESE_SPEDIZIONE
+        vetrina:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            default: NO
+            column: VETRINA
+        ordineVetrina:
+            type: integer
+            nullable: true
+            unsigned: false
+            default: '0'
+            column: ORDINE_VETRINA
+        keywords:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: KEYWORDS
+        emailRegistrazione:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: EMAIL_REGISTRAZIONE
+        aggiornamento:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+            column: AGGIORNAMENTO
+        testoDemo:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: TESTO_DEMO
+        disponibile:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: SI
+            column: DISPONIBILE
+        pubblicato:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: SI
+            column: PUBBLICATO
+        contatore:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: CONTATORE
+        contatoremensile:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: CONTATOREMENSILE
+        qta:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: QTA
+        fuoriCatalogo:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: NO
+            column: FUORI_CATALOGO
+        mipiaci:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: MIPIACI
+        iva:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            default: NO
+            column: IVA
+    lifecycleCallbacks: {  }

@@ -1,0 +1,30 @@
+LLPP\MyTestBundle\Entity\NewsBookLink:
+    type: entity
+    table: news_book_link
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        idCategory:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: id_category
+        idNews:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: id_news
+        isbn:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+    lifecycleCallbacks: {  }

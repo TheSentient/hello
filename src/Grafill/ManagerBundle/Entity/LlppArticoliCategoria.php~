@@ -1,0 +1,53 @@
+<?php
+
+namespace Grafill\ManagerBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * LlppArticoliCategoria
+ *
+ * @ORM\Table(name="llpp_articoli_categoria")
+ * @ORM\Entity
+ */
+class LlppArticoliCategoria
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="argomento", type="string", length=40, nullable=true)
+     */
+    private $argomento;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="categorie", type="string", length=40, nullable=true)
+     */
+    private $categorie;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="icona", type="string", length=255, nullable=true)
+     */
+    private $icona;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="topTenHome", type="string", length=50, nullable=false)
+     */
+    private $toptenhome;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="ID", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+
+}

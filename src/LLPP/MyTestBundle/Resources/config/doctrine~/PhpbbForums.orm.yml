@@ -1,0 +1,137 @@
+LLPP\MyTestBundle\Entity\PhpbbForums:
+    type: entity
+    table: phpbb_forums
+    indexes:
+        forums_order:
+            columns:
+                - forum_order
+        cat_id:
+            columns:
+                - cat_id
+        forum_last_post_id:
+            columns:
+                - forum_last_post_id
+    id:
+        forumId:
+            type: smallint
+            nullable: false
+            unsigned: true
+            default: '0'
+            id: true
+            column: forum_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        catId:
+            type: integer
+            nullable: false
+            unsigned: true
+            default: '0'
+            column: cat_id
+        forumName:
+            type: string
+            nullable: true
+            length: 150
+            fixed: false
+            column: forum_name
+        forumDesc:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: forum_desc
+        forumStatus:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: forum_status
+        forumOrder:
+            type: integer
+            nullable: false
+            unsigned: true
+            default: '1'
+            column: forum_order
+        forumPosts:
+            type: integer
+            nullable: false
+            unsigned: true
+            default: '0'
+            column: forum_posts
+        forumTopics:
+            type: integer
+            nullable: false
+            unsigned: true
+            default: '0'
+            column: forum_topics
+        forumLastPostId:
+            type: integer
+            nullable: false
+            unsigned: true
+            default: '0'
+            column: forum_last_post_id
+        pruneNext:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: prune_next
+        pruneEnable:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: prune_enable
+        authView:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: auth_view
+        authRead:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: auth_read
+        authPost:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: auth_post
+        authReply:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: auth_reply
+        authEdit:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: auth_edit
+        authDelete:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: auth_delete
+        authSticky:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: auth_sticky
+        authAnnounce:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: auth_announce
+        authVote:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: auth_vote
+        authPollcreate:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: auth_pollcreate
+        authAttachments:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: auth_attachments
+    lifecycleCallbacks: {  }

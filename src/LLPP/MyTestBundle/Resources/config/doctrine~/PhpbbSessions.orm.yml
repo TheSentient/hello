@@ -1,0 +1,66 @@
+LLPP\MyTestBundle\Entity\PhpbbSessions:
+    type: entity
+    table: phpbb_sessions
+    indexes:
+        session_user_id:
+            columns:
+                - session_user_id
+        session_id_ip_user_id:
+            columns:
+                - session_id
+                - session_ip
+                - session_user_id
+    id:
+        sessionId:
+            type: string
+            nullable: false
+            length: 32
+            fixed: true
+            default: ''
+            id: true
+            column: session_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        sessionUserId:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: session_user_id
+        sessionStart:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: session_start
+        sessionTime:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: session_time
+        sessionIp:
+            type: string
+            nullable: false
+            length: 8
+            fixed: true
+            default: '0'
+            column: session_ip
+        sessionPage:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: session_page
+        sessionLoggedIn:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: session_logged_in
+        sessionAdmin:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: session_admin
+    lifecycleCallbacks: {  }

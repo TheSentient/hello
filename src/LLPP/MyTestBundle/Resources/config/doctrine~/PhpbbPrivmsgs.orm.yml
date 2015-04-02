@@ -1,0 +1,78 @@
+LLPP\MyTestBundle\Entity\PhpbbPrivmsgs:
+    type: entity
+    table: phpbb_privmsgs
+    indexes:
+        privmsgs_from_userid:
+            columns:
+                - privmsgs_from_userid
+        privmsgs_to_userid:
+            columns:
+                - privmsgs_to_userid
+    id:
+        privmsgsId:
+            type: integer
+            nullable: false
+            unsigned: true
+            id: true
+            column: privmsgs_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        privmsgsType:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: privmsgs_type
+        privmsgsSubject:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: '0'
+            column: privmsgs_subject
+        privmsgsFromUserid:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: privmsgs_from_userid
+        privmsgsToUserid:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: privmsgs_to_userid
+        privmsgsDate:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: privmsgs_date
+        privmsgsIp:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            default: ''
+            column: privmsgs_ip
+        privmsgsEnableBbcode:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: privmsgs_enable_bbcode
+        privmsgsEnableHtml:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: privmsgs_enable_html
+        privmsgsEnableSmilies:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: privmsgs_enable_smilies
+        privmsgsAttachSig:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: privmsgs_attach_sig
+    lifecycleCallbacks: {  }

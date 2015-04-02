@@ -1,0 +1,48 @@
+LLPP\MyTestBundle\Entity\Lngruppi:
+    type: entity
+    table: lnGruppi
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idCliente:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: id_cliente
+        categoriagruppo:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            column: categoriaGruppo
+        titologruppo:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: titoloGruppo
+        descrizionegruppo:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: descrizioneGruppo
+        utentigruppo:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: utentiGruppo
+        imggruppo:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: imgGruppo
+    lifecycleCallbacks: {  }

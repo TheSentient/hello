@@ -1,0 +1,70 @@
+LLPP\MyTestBundle\Entity\GareProgettazione:
+    type: entity
+    table: gare_progettazione
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        ente:
+            type: string
+            nullable: true
+            length: 248
+            fixed: false
+        indirizzo:
+            type: string
+            nullable: true
+            length: 248
+            fixed: false
+        cap:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+        citta:
+            type: string
+            nullable: true
+            length: 248
+            fixed: false
+        prov:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+        regione:
+            type: string
+            nullable: true
+            length: 180
+            fixed: false
+        oggetto:
+            type: text
+            nullable: true
+            length: 16777215
+            fixed: false
+        importoLavori:
+            type: string
+            nullable: true
+            length: 150
+            fixed: false
+            column: importo_lavori
+        importoOnorario:
+            type: string
+            nullable: true
+            length: 150
+            fixed: false
+            column: importo_onorario
+        dataScadenza:
+            type: date
+            nullable: true
+            column: data_scadenza
+        evidenza:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            default: NO
+    lifecycleCallbacks: {  }

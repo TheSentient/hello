@@ -1,0 +1,70 @@
+LLPP\MyTestBundle\Entity\Ordiniback:
+    type: entity
+    table: ordiniBACK
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        data:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+        ts:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+        cliente:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        idCliente:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: id_cliente
+        totaleOrdine:
+            type: float
+            nullable: true
+            precision: 15
+            scale: 2
+            column: totale_ordine
+        tipoSpedizione:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: tipo_spedizione
+        tipoPagamento:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: tipo_pagamento
+        stato:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+        sessione:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        numOrdine:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: num_ordine
+        dataSped:
+            type: date
+            nullable: true
+            column: data_sped
+    lifecycleCallbacks: {  }

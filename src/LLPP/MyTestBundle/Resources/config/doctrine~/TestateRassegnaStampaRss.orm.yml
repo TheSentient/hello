@@ -1,0 +1,35 @@
+LLPP\MyTestBundle\Entity\TestateRassegnaStampaRss:
+    type: entity
+    table: testate_rassegna_stampa_rss
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        testata:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+        codice:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+        logoBig:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            column: logo_big
+        logoSmall:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            column: logo_small
+    lifecycleCallbacks: {  }

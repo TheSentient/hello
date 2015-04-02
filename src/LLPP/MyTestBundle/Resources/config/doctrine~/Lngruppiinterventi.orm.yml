@@ -1,0 +1,32 @@
+LLPP\MyTestBundle\Entity\Lngruppiinterventi:
+    type: entity
+    table: lnGruppiInterventi
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idGruppo:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: id_gruppo
+        titolo:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        testo:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        data:
+            type: date
+            nullable: true
+    lifecycleCallbacks: {  }

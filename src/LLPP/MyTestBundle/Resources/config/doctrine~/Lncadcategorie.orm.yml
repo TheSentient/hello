@@ -1,0 +1,19 @@
+LLPP\MyTestBundle\Entity\Lncadcategorie:
+    type: entity
+    table: lnCADCategorie
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        categorie:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+    lifecycleCallbacks: {  }

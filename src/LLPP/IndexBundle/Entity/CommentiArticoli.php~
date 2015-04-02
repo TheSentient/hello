@@ -1,0 +1,46 @@
+<?php
+
+namespace LLPP\IndexBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * CommentiArticoli
+ *
+ * @ORM\Table(name="commenti_utenti")
+ * @ORM\Entity
+ */
+class CommentiArticoli
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+
+
+/**
+   * @ORM\ManyToOne(targetEntity="Articoli")
+   * */
+  private $articolo;
+ 
+  public function __construct()
+  {
+  }
+
+}

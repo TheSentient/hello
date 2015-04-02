@@ -1,0 +1,18 @@
+LLPP\MyTestBundle\Entity\NumeriLlppHome:
+    type: entity
+    table: numeri_llpp_home
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        numeri:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+    lifecycleCallbacks: {  }

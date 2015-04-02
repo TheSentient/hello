@@ -1,0 +1,33 @@
+LLPP\MyTestBundle\Entity\ArchivioNewsletterAziende:
+    type: entity
+    table: archivio_newsletter_aziende
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        codice:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+        azienda:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        dataSpedizione:
+            type: date
+            nullable: true
+            column: data_spedizione
+        linkEseguire:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: link_eseguire
+    lifecycleCallbacks: {  }

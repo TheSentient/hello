@@ -1,0 +1,33 @@
+LLPP\MyTestBundle\Entity\NewsDestinatari:
+    type: entity
+    table: news_destinatari
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        nome:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+        cognome:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+        indirizzo:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+        v:
+            type: string
+            nullable: true
+            length: 2
+            fixed: true
+    lifecycleCallbacks: {  }

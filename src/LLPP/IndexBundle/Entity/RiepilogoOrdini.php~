@@ -1,0 +1,67 @@
+<?php
+
+namespace Grafill\ManagerBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * RiepilogoOrdini
+ *
+ * @ORM\Table(name="riepilogo_ordini")
+ * @ORM\Entity
+ */
+class RiepilogoOrdini
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="id_ordine", type="string", length=100, nullable=true)
+     */
+    private $idOrdine;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_cliente", type="integer", nullable=true)
+     */
+    private $idCliente;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="cliente", type="string", length=200, nullable=true)
+     */
+    private $cliente;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="codice", type="string", length=60, nullable=true)
+     */
+    private $codice;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="qta", type="integer", nullable=true)
+     */
+    private $qta;
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="prezzo", type="float", precision=15, scale=2, nullable=true)
+     */
+    private $prezzo;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="bigint")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+
+}

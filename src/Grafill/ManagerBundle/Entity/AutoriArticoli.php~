@@ -1,0 +1,39 @@
+<?php
+
+namespace Grafill\ManagerBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * AutoriArticoli
+ *
+ * @ORM\Table(name="autori_articoli", indexes={@ORM\Index(name="id_articolo_id_autori", columns={"id_articolo", "id_autori"})})
+ * @ORM\Entity
+ */
+class AutoriArticoli
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_articolo", type="integer", nullable=true)
+     */
+    private $idArticolo;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_autori", type="integer", nullable=true)
+     */
+    private $idAutori;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+
+}

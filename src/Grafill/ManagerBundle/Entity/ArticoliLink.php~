@@ -1,0 +1,39 @@
+<?php
+
+namespace Grafill\ManagerBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * ArticoliLink
+ *
+ * @ORM\Table(name="articoli_link")
+ * @ORM\Entity
+ */
+class ArticoliLink
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_articolo", type="integer", nullable=true)
+     */
+    private $idArticolo;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_link", type="integer", nullable=true)
+     */
+    private $idLink;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+
+}

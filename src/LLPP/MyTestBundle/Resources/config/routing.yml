@@ -1,0 +1,3 @@
+llpp_my_test_homepage:
+    path:     /
+    defaults: { _controller: LLPPMyTestBundle:Default:index }

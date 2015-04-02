@@ -1,0 +1,44 @@
+LLPP\MyTestBundle\Entity\Archivioprofessionistiavvisi:
+    type: entity
+    table: archivioProfessionistiAvvisi
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        guid:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: GUID
+        idprofessionista:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: idProfessionista
+        data:
+            type: date
+            nullable: false
+        titolo:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        testo:
+            type: text
+            nullable: false
+            length: 16777215
+            fixed: false
+        pubblicato:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: SI
+    lifecycleCallbacks: {  }

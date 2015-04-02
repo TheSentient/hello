@@ -1,0 +1,21 @@
+LLPP\MyTestBundle\Entity\LogNewsletter:
+    type: entity
+    table: log_newsletter
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        indirizzo:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+        ts:
+            type: time
+            nullable: true
+    lifecycleCallbacks: {  }

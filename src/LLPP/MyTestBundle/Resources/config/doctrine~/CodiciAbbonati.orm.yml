@@ -1,0 +1,28 @@
+LLPP\MyTestBundle\Entity\CodiciAbbonati:
+    type: entity
+    table: codici_abbonati
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        nominativo:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+        codiceAbbonato:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: codice_abbonato
+        dataScadenza:
+            type: date
+            nullable: true
+            column: data_scadenza
+    lifecycleCallbacks: {  }

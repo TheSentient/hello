@@ -1,0 +1,13 @@
+LLPP\JournalBundle\Entity\FileAllegato:
+    type: entity
+    table: null
+    repositoryClass: LLPP\JournalBundle\Entity\FileAllegatoRepository
+    manyToMany:
+        news:
+            targetEntity: News
+            mappedBy: filesAllegati
+    manyToMany:
+        corsi:
+            targetEntity: CorsoFormazione
+            mappedBy: filesAllegati
+    lifecycleCallbacks: {  }

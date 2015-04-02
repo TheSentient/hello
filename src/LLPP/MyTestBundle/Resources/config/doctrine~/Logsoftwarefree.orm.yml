@@ -1,0 +1,24 @@
+LLPP\MyTestBundle\Entity\Logsoftwarefree:
+    type: entity
+    table: logSoftwareFree
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        user:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        file:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+    lifecycleCallbacks: {  }

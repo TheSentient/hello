@@ -1,0 +1,32 @@
+LLPP\MyTestBundle\Entity\Concorsogazzettaufficiale:
+    type: entity
+    table: concorsoGazzettaUfficiale
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idconcorso:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idConcorso
+        email:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+        mese:
+            type: integer
+            nullable: true
+            unsigned: false
+        anno:
+            type: integer
+            nullable: true
+            unsigned: false
+    lifecycleCallbacks: {  }

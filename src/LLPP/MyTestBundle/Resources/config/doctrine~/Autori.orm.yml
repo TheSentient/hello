@@ -1,0 +1,33 @@
+LLPP\MyTestBundle\Entity\Autori:
+    type: entity
+    table: autori
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        nome:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+        cognome:
+            type: string
+            nullable: true
+            length: 90
+            fixed: false
+        biografia:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        password:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+    lifecycleCallbacks: {  }

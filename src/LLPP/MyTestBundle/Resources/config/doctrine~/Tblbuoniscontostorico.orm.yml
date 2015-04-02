@@ -1,0 +1,30 @@
+LLPP\MyTestBundle\Entity\Tblbuoniscontostorico:
+    type: entity
+    table: tblBuoniScontoStorico
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idcliente:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idCliente
+        idbuono:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idBuono
+        codicebuono:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: codiceBuono
+    lifecycleCallbacks: {  }

@@ -1,0 +1,28 @@
+LLPP\MyTestBundle\Entity\FasiProgetto:
+    type: entity
+    table: fasi_progetto
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        fase:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+        classe:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+        valore:
+            type: float
+            nullable: true
+            precision: 15
+            scale: 3
+    lifecycleCallbacks: {  }

@@ -1,0 +1,63 @@
+LLPP\MyTestBundle\Entity\Aggiudicazionibandigara:
+    type: entity
+    table: aggiudicazioniBandiGara
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        aggiudicatario:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        indirizzoaggiudicatario:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: indirizzoAggiudicatario
+        enteappaltante:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: enteAppaltante
+        oggetto:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        importo:
+            type: float
+            nullable: true
+            precision: 20
+            scale: 2
+        categoria:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        dataaggiudicazione:
+            type: date
+            nullable: true
+            column: dataAggiudicazione
+        termine:
+            type: date
+            nullable: true
+        ribasso:
+            type: float
+            nullable: true
+            precision: 20
+            scale: 2
+        offerta:
+            type: float
+            nullable: true
+            precision: 20
+            scale: 2
+    lifecycleCallbacks: {  }

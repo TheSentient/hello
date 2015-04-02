@@ -1,0 +1,9 @@
+{% extends 'AlangemarCrudHandlerBundle:Crud:form.html.twig' %}
+
+{% block _pjs_professionalbundle_progetto_settore_widget %}
+    <ul class="collection-form" data-prototype="{{ form_widget(form.vars.prototype)|e }}">
+       {% for settore in form %}
+            <li>{{ form_row(settore) }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

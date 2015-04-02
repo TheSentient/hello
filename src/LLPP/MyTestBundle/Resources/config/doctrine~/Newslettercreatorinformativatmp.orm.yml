@@ -1,0 +1,19 @@
+LLPP\MyTestBundle\Entity\Newslettercreatorinformativatmp:
+    type: entity
+    table: newsletterCreatorInformativaTmp
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        html:
+            type: text
+            nullable: false
+            length: null
+            fixed: false
+    lifecycleCallbacks: {  }

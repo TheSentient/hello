@@ -1,0 +1,75 @@
+LLPP\MyTestBundle\Entity\ArchivioCorsi:
+    type: entity
+    table: archivio_corsi
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        codice:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        nomeCorso:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: nome_corso
+        societa:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        sede:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        img:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        descrizione:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        dataInizio:
+            type: date
+            nullable: true
+            column: data_inizio
+        costo:
+            type: float
+            nullable: true
+            precision: 9
+            scale: 2
+        quotaIscrizione:
+            type: float
+            nullable: true
+            precision: 9
+            scale: 2
+            column: quota_iscrizione
+        sconto:
+            type: integer
+            nullable: true
+            unsigned: false
+        speseSpedizione:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            default: NO
+            column: SPESE_SPEDIZIONE
+        note:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+    lifecycleCallbacks: {  }

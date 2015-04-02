@@ -1,0 +1,30 @@
+LLPP\MyTestBundle\Entity\PhpbbSmilies:
+    type: entity
+    table: phpbb_smilies
+    id:
+        smiliesId:
+            type: smallint
+            nullable: false
+            unsigned: true
+            id: true
+            column: smilies_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        code:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+        smileUrl:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            column: smile_url
+        emoticon:
+            type: string
+            nullable: true
+            length: 75
+            fixed: false
+    lifecycleCallbacks: {  }

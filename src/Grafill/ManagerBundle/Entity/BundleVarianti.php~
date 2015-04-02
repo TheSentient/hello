@@ -1,0 +1,46 @@
+<?php
+
+namespace Grafill\ManagerBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * BundleVarianti
+ *
+ * @ORM\Table(name="bundle_varianti")
+ * @ORM\Entity
+ */
+class BundleVarianti
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_variante", type="integer", nullable=true)
+     */
+    private $idVariante;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_variante2", type="integer", nullable=true)
+     */
+    private $idVariante2;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_bundle", type="integer", nullable=true)
+     */
+    private $idBundle;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+
+}

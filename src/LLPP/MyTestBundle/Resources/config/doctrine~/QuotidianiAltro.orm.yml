@@ -1,0 +1,28 @@
+LLPP\MyTestBundle\Entity\QuotidianiAltro:
+    type: entity
+    table: quotidiani_altro
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        tipo:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+        titolo:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        link:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+    lifecycleCallbacks: {  }

@@ -1,0 +1,26 @@
+LLPP\JournalBundle\Entity\Categoria:
+    type: entity
+    table: null
+    repositoryClass: LLPP\JournalBundle\Entity\CategoriaRepository
+    oneToMany:
+        news:
+            targetEntity: News
+            mappedBy: categoria
+        normativa:
+            targetEntity: Normativa
+            mappedBy: categoria
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nome:
+            type: string
+            length: 255
+        colore:
+            type: string
+            nullable: true
+            length: '7'
+    lifecycleCallbacks: {  }

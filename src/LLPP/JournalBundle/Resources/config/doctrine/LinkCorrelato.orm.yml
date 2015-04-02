@@ -1,0 +1,13 @@
+LLPP\JournalBundle\Entity\LinkCorrelato:
+    type: entity
+    table: null
+    repositoryClass: LLPP\JournalBundle\Entity\LinkCorrelatoRepository
+    manyToMany:
+        news:
+            targetEntity: News
+            mappedBy: linksCorrelati
+    manyToMany:
+        corsi:
+            targetEntity: CorsoFormazione
+            mappedBy: linksCorrelati
+    lifecycleCallbacks: {  }

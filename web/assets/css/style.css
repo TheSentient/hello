@@ -1,0 +1,578 @@
+@import url(http://fonts.googleapis.com/css?family=Khula:400,700);
+/* CONSTANTS */
+/* MIXINS */
+/* GENERAL RULES */
+/* line 56, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_general.sass */
+body {
+  font-family: "Khula", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: 400 !important;
+  line-height: 120% !important;
+}
+
+/* line 59, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_general.sass */
+.head-color {
+  color: #a72330 !important;
+}
+
+/* line 62, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_general.sass */
+.inclined-dotted-box {
+  overflow: hidden;
+  width: 19px;
+  height: 20px;
+  position: relative;
+  box-shadow: 1px 2px 0px 1px white inset;
+}
+/* line 68, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_general.sass */
+.inclined-dotted-box img {
+  display: inline-block;
+  float: left;
+  position: absolute;
+  bottom: -3px;
+  left: -1px;
+}
+
+/* line 76, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_general.sass */
+.loading {
+  display: none;
+  opacity: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 43vh;
+  background-color: rgba(255, 255, 255, 0.4);
+  z-index: 5;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+/* line 89, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_general.sass */
+.loading.active {
+  opacity: 1;
+  display: block;
+}
+
+/* line 6, ass79F5.tmp.sass */
+#main-nav .container {
+  max-width: 980px !important;
+  padding: 0 !important;
+}
+
+/* line 10, ass79F5.tmp.sass */
+body {
+  background-color: #333333;
+}
+
+/* line 13, ass79F5.tmp.sass */
+#main-content {
+  background-color: white;
+  margin-top: 0;
+  max-width: 980px !important;
+  padding-left: 20px !important;
+}
+
+/* line 1, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_header.sass */
+header {
+  position: relative;
+}
+
+/* line 4, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_header.sass */
+#main-nav-center {
+  width: 980px !important;
+}
+
+/* line 8, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_header.sass */
+#main-nav .navbar {
+  min-height: 0 !important;
+}
+
+/* line 11, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_header.sass */
+#main-nav-container {
+  position: relative;
+}
+/* line 13, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_header.sass */
+#main-nav-container .navbar-header {
+  position: absolute;
+  left: -220px;
+  bottom: -14px;
+}
+/* line 17, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_header.sass */
+#main-nav-container .navbar-header img {
+  width: 200px !important;
+}
+
+/* line 20, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_header.sass */
+.big-nav-top.navbar {
+  margin-bottom: 0;
+  box-shadow: 0px 2px 5px #666666;
+}
+
+/* line 24, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_header.sass */
+.big-nav-top.navbar-brand {
+  height: auto;
+}
+
+/* line 27, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_header.sass */
+.big-nav-top.navbar-form {
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+}
+/* line 30, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_header.sass */
+.big-nav-top.navbar-form .form-control {
+  height: 20px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+/* line 33, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_header.sass */
+.big-nav-top.navbar-form .btn {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  font-size: 12px !important;
+}
+
+/* line 37, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_header.sass */
+.big-nav-bottom.navbar-fixed-top {
+  box-shadow: 0 3px 10px 0px #111111;
+}
+
+/*Bootstrap overriding */
+/* line 2, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-header.sass */
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  color: #a72330 !important;
+  background: none !important;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+/* line 7, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-header.sass */
+.nav-pills > li.active > a:hover {
+  color: #9c9c9c !important;
+}
+
+/* line 10, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-header.sass */
+.nav > li > a {
+  padding: 10px 14px !important;
+}
+
+/* line 13, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-header.sass */
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 20px;
+}
+
+/* End Bootstrap */
+/* line 19, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-header.sass */
+#page-content {
+  display: inline-block;
+  float: left;
+  width: 100%;
+}
+
+/* line 24, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-header.sass */
+.page-header {
+  position: relative;
+  padding-bottom: 0 !important;
+  margin: 30px 0px 0;
+  border: none !important;
+  display: inline-block;
+  float: left;
+  background: url("../immagini/dot-x.svg") repeat-x center bottom;
+}
+/* line 32, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-header.sass */
+.page-header .row {
+  position: relative;
+}
+
+/* line 35, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-header.sass */
+#today-data-display {
+  font-family: Georgia, Times New Roman !important;
+  font-weight: 400 !important;
+  line-height: 120% !important;
+  position: absolute;
+  bottom: -5px;
+}
+
+/* line 40, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-header.sass */
+.banner {
+  display: inline-block;
+  float: left;
+}
+/* line 43, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-header.sass */
+.banner img {
+  width: 100%;
+}
+
+/* line 46, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-header.sass */
+#main-logo {
+  max-width: 610px !important;
+}
+
+/* line 49, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-header.sass */
+.list-decoration {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background-image: -webkit-gradient(linear, to right, to left, color-stop(0%, #cccccc), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(to right, #cccccc, #ffffff);
+  background-image: -moz-linear-gradient(to right, #cccccc, #ffffff);
+  background-image: -o-linear-gradient(to right, #cccccc, #ffffff);
+  background-image: linear-gradient(to right, #cccccc, #ffffff);
+}
+
+/* line 55, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-header.sass */
+#top-banner {
+  margin-left: 20px;
+  max-width: 310px !important;
+}
+
+/* line 1, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+h3 {
+  color: #a72330;
+  margin: 0;
+}
+
+/* line 5, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+article {
+  margin-top: 20px;
+}
+
+/* line 8, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+article, article > .row > div {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* line 12, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+.article-section {
+  margin-left: 20px;
+  font-size: 20px;
+  font-family: "Khula", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: 700 !important;
+  line-height: 120% !important;
+}
+
+/* line 18, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+.article-header .left-side {
+  background: url("../immagini/dot-x.svg") repeat-x center bottom;
+}
+/* line 20, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+.article-header .right-side {
+  background: url("../immagini/dot-x.svg") repeat-x center top;
+  padding-left: 0 !important;
+}
+
+/* line 25, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+.article-content > .left-side {
+  padding-right: 10px !important;
+  border-right: 1px solid #eeeeee;
+}
+/* line 28, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+.article-content > .right-side {
+  padding-left: 10px !important;
+}
+/* line 30, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+.article-content img {
+  width: 100%;
+}
+
+/* line 34, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+.news-big-preview .row {
+  margin-bottom: 10px !important;
+}
+/* line 36, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+.news-big-preview .news-category {
+  font-size: 18px !important;
+  padding: 4px 3px 0 6px !important;
+  height: 22px;
+  background: #eeeeee;
+  color: #a72330;
+  font-family: "Khula", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: 700 !important;
+  line-height: 120% !important;
+}
+/* line 43, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+.news-big-preview .news-comments {
+  padding: 4px 0 0 20px !important;
+}
+/* line 45, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+.news-big-preview .news-social {
+  padding: 0 !important;
+  text-align: right;
+  font-size: 21px;
+}
+/* line 49, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+.news-big-preview .news-image {
+  position: relative;
+}
+/* line 51, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+.news-big-preview .news-title {
+  font-family: Georgia, Times New Roman !important;
+  font-weight: 700 !important;
+  line-height: 120% !important;
+  font-size: 26px !important;
+  position: absolute;
+  padding: 3px 15px 5px;
+  bottom: 0;
+  margin: 0;
+  color: white;
+  background: rgba(150, 150, 150, 0.7);
+}
+
+/* line 61, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+.news-small-preview {
+  background-color: #dddddd;
+}
+/* line 63, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+.news-small-preview .news-top-bar > span {
+  height: 18px;
+}
+/* line 65, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+.news-small-preview .news-category {
+  background-color: white;
+  position: relative;
+  padding: 0 !important;
+}
+/* line 69, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+.news-small-preview .news-category h5 {
+  font-family: "Khula", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: 700 !important;
+  line-height: 120% !important;
+  font-size: 12px !important;
+  color: #a72330;
+  margin: 5px 0;
+}
+/* line 72, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+.news-small-preview .news-category:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-style: solid;
+  border-width: 18px 10px 0px 0px;
+  border-color: transparent #dddddd;
+  display: block;
+  width: 0;
+  z-index: 1;
+}
+/* line 83, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+.news-small-preview .news-comments, .news-small-preview .news-social {
+  text-align: right;
+  padding: 2px 2px 0 0 !important;
+}
+/* line 86, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+.news-small-preview .row {
+  margin-bottom: 0 !important;
+  border-bottom: 1px dashed #cccccc;
+}
+/* line 89, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+.news-small-preview .left-side, .news-small-preview .right-side {
+  padding: 10px !important;
+}
+/* line 91, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+.news-small-preview .right-side {
+  padding-left: 0;
+}
+/* line 93, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+.news-small-preview .right-side h3 {
+  font-family: Georgia, Times New Roman !important;
+  font-weight: 700 !important;
+  line-height: 120% !important;
+  font-size: 12px !important;
+  color: #999999;
+  margin: 7px 0;
+}
+
+/* line 98, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+.article-content.bottom .bottom-smalls-lateral:nth-child(1) {
+  padding-right: 10px !important;
+}
+/* line 100, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+.article-content.bottom .bottom-smalls-lateral:nth-child(2) {
+  padding-left: 10px !important;
+}
+/* line 102, ../../../../../Progetti/lavoripubblici.it/web/bundles/llppindex/css/_page-content.sass */
+.article-content.bottom .bottom-smalls-central {
+  padding-right: 10px !important;
+  padding-right: 10px !important;
+}
+
+.news-content-preview-sticky {
+
+line-height: 28px;
+text-align: justify;
+
+
+}
+
+.background-iptop {
+
+           height:20px;
+           border-top-style: dotted;
+           border-right-style: dotted;
+           border-color:#a72330;
+
+}
+
+#centro-background-iptop {
+
+    
+           border-bottom-style: dotted;
+           border-color:#a72330;
+
+
+}
+
+#centro-background-iptop span:hover , #tabs-settimana-mese span:hover {
+
+   font-weight:bold;
+   cursor:pointer;
+   text-decoration:underline;
+
+
+}
+
+
+#centro-background-iptop span:not(:first-of-type) {
+
+margin-left:15px;
+
+}
+
+#centro-background-iptop span {
+
+font-size:11px;
+
+}
+
+#tabs-settimana-mese {
+
+padding-top:12px;
+  text-align: center;
+
+}
+
+
+#linkletcond li {
+
+  float:left;
+  list-style-type: none;
+  font-size:12px;
+
+
+}
+
+
+.clearedfix {
+
+clear:both;
+
+}
+
+#tabs-settimana-mese span {
+
+  margin-right:2px;
+  font-size:11px;
+  text-transform:capitalize;
+
+
+}
+
+#dentro-top-news {
+
+  border-left-style: solid;
+  border-right-style: solid;
+  border-color:#dddddd;
+  border-left-width: 1px;
+  border-right-width: 1px;
+ /* padding:20px; */
+
+
+}
+
+.no-padding {
+
+margin:0px!important;
+padding:0px!important;
+
+}
+
+#dentro-top-news p {
+
+font-size:12px;
+font-weight: 700;
+
+}
+
+#dentro-top-news span {
+
+  margin-right: 2px;
+  font-size: 11px;
+  text-transform: capitalize;
+
+
+}
+
+#sbarra-sinistra {
+
+height: 17px;
+border-bottom: 1px solid grey;
+
+}
+
+#tutte-news {
+
+top: 10px;
+position: relative;
+
+}
+
+#tutte-news span {
+
+  padding-left: 4px;
+}
+
+#topnews_logo {
+
+margin-top:3px;
+
+}
+
+.clearedfix {
+
+cleared:both;
+
+}
+
+
+#linkletcond {
+
+  padding:0px;
+  margin:0px;
+  padding-bottom:3px;
+
+}
+
+#linkletcond li {
+
+  margin-left:8px;
+  font-size:11px;
+}
+
+#linkletcond li a {
+
+  color:#333;
+}
+
+
+.active {
+
+font-weight: bold;
+
+
+}

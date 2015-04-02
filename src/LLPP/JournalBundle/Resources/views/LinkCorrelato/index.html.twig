@@ -1,0 +1,8 @@
+{% extends 'AlangemarCrudHandlerBundle:Crud:index.html.twig' %}
+{% set content_title_h1 = 'Links Correlati' %}
+
+{% block ajax_filters %}
+    {% include 'AlangemarCrudHandlerBundle:Crud:filter-search.html.twig' %}
+    {% include 'AlangemarCrudHandlerBundle:Crud:filter-risultati-per-pagina.html.twig' %}
+{% endblock ajax_filters %}
+

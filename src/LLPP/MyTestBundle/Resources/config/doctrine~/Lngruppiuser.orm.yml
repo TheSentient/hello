@@ -1,0 +1,24 @@
+LLPP\MyTestBundle\Entity\Lngruppiuser:
+    type: entity
+    table: lnGruppiUser
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idCliente:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: id_cliente
+        idGruppo:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: id_gruppo
+    lifecycleCallbacks: {  }

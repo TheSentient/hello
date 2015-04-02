@@ -1,0 +1,48 @@
+LLPP\MyTestBundle\Entity\GazzettaUfficiale:
+    type: entity
+    table: gazzetta_ufficiale
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        nome:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        file:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        fileCert:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: file_cert
+        data:
+            type: date
+            nullable: false
+        numero:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        tipo:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        numeroTipo:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: numero_tipo
+    lifecycleCallbacks: {  }

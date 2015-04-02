@@ -1,0 +1,30 @@
+normativa:
+    path:     /
+    defaults: { _controller: "LLPPJournalBundle:Normativa:index" }
+
+normativa_show:
+    path:     /{id}/show
+    defaults: { _controller: "LLPPJournalBundle:Normativa:show" }
+
+normativa_new:
+    path:     /new
+    defaults: { _controller: "LLPPJournalBundle:Normativa:new" }
+
+normativa_create:
+    path:     /create
+    defaults: { _controller: "LLPPJournalBundle:Normativa:create" }
+    requirements: { _method: post }
+
+normativa_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "LLPPJournalBundle:Normativa:edit" }
+
+normativa_update:
+    path:     /{id}/update
+    defaults: { _controller: "LLPPJournalBundle:Normativa:update" }
+    requirements: { _method: post|put }
+
+normativa_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "LLPPJournalBundle:Normativa:delete" }
+    requirements: { _method: post|delete }

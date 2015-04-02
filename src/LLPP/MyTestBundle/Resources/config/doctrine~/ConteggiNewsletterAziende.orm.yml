@@ -1,0 +1,37 @@
+LLPP\MyTestBundle\Entity\ConteggiNewsletterAziende:
+    type: entity
+    table: conteggi_newsletter_aziende
+    indexes:
+        codice_newsletter:
+            columns:
+                - codice_newsletter
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        newsletter:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        ts:
+            type: datetime
+            nullable: true
+        linkEseguito:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+            column: link_eseguito
+        codiceNewsletter:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: codice_newsletter
+    lifecycleCallbacks: {  }

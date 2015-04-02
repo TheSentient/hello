@@ -1,0 +1,31 @@
+LLPP\MyTestBundle\Entity\Bandiallegati:
+    type: entity
+    table: bandiAllegati
+    id:
+        idallegato:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: idAllegato
+            generator:
+                strategy: IDENTITY
+    fields:
+        idbando:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: idBando
+        nomeallegato:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: nomeAllegato
+        linkallegato:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: linkAllegato
+    lifecycleCallbacks: {  }

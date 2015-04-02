@@ -1,0 +1,32 @@
+LLPP\MyTestBundle\Entity\Lncommenti:
+    type: entity
+    table: lnCommenti
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idMittente:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: id_mittente
+        idDestinatario:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: id_destinatario
+        testo:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        data:
+            type: datetime
+            nullable: true
+    lifecycleCallbacks: {  }

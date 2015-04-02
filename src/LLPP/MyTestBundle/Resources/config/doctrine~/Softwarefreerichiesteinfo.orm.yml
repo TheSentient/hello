@@ -1,0 +1,38 @@
+LLPP\MyTestBundle\Entity\Softwarefreerichiesteinfo:
+    type: entity
+    table: softwareFreeRichiesteInfo
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        nominativo:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: Nominativo
+        email:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: Email
+        testo:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: Testo
+        software:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: Software
+    lifecycleCallbacks: {  }

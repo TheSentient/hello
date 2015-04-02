@@ -1,0 +1,44 @@
+LLPP\MyTestBundle\Entity\TipologieNewsletter:
+    type: entity
+    table: tipologie_newsletter
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        codice:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+        sito:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+        tipo:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+        template:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+        startPage:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            column: start_page
+        mittente:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+    lifecycleCallbacks: {  }

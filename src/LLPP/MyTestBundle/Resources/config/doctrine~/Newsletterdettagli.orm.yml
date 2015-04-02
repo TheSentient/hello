@@ -1,0 +1,38 @@
+LLPP\MyTestBundle\Entity\Newsletterdettagli:
+    type: entity
+    table: newsletterDettagli
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        data:
+            type: date
+            nullable: true
+        invii:
+            type: integer
+            nullable: true
+            unsigned: false
+        azienda:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+        n:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: N
+        attiva:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: NO
+    lifecycleCallbacks: {  }

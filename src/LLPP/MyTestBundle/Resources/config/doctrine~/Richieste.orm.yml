@@ -1,0 +1,73 @@
+LLPP\MyTestBundle\Entity\Richieste:
+    type: entity
+    table: richieste
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        speciale:
+            type: string
+            nullable: true
+            length: 90
+            fixed: false
+        nome:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+        cognome:
+            type: string
+            nullable: true
+            length: 90
+            fixed: false
+        professione:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+        email:
+            type: string
+            nullable: true
+            length: 90
+            fixed: false
+        testo:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        indirizzo:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+        citta:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+        cap:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+        tel:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+        fax:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+        oggetto:
+            type: string
+            nullable: true
+            length: 90
+            fixed: false
+    lifecycleCallbacks: {  }

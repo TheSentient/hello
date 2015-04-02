@@ -1,0 +1,23 @@
+LLPP\MyTestBundle\Entity\SoftCat:
+    type: entity
+    table: soft_cat
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        nome:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+        sigla:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+    lifecycleCallbacks: {  }

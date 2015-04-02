@@ -1,0 +1,144 @@
+LLPP\MyTestBundle\Entity\Registrazione:
+    type: entity
+    table: registrazione
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        cognome:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Cognome
+        nome:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Nome
+        username:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Username
+        password:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            default: ''
+            column: Password
+        professione:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Professione
+        societa:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Societa
+        indirizzo:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            default: ''
+            column: Indirizzo
+        cap:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: Cap
+        citta:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Citta
+        provincia:
+            type: string
+            nullable: false
+            length: 4
+            fixed: false
+            default: ''
+            column: Provincia
+        telefono:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Telefono
+        fax:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Fax
+        email:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Email
+        verifica:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: NO
+            column: Verifica
+        dataInizio:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DATA_INIZIO
+        dataFine:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: DATA_FINE
+        scadenza:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            default: ''
+            column: Scadenza
+        trattDati:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: SI
+            column: Tratt_dati
+        corretto:
+            type: string
+            nullable: false
+            length: 5
+            fixed: false
+            default: ''
+            column: Corretto
+    lifecycleCallbacks: {  }

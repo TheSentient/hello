@@ -1,0 +1,31 @@
+LLPP\MyTestBundle\Entity\Lnfriendship:
+    type: entity
+    table: lnFriendShip
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        id1:
+            type: integer
+            nullable: true
+            unsigned: false
+        id2:
+            type: integer
+            nullable: true
+            unsigned: false
+        data:
+            type: date
+            nullable: true
+        reale:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: NO
+    lifecycleCallbacks: {  }

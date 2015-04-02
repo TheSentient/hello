@@ -1,0 +1,63 @@
+LLPP\MyTestBundle\Entity\ArchivioOfferte:
+    type: entity
+    table: archivio_offerte
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        sito:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+        isbn:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+        dataScadenza:
+            type: date
+            nullable: true
+            column: data_scadenza
+        stoffOfferta:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            column: stoff_offerta
+        stoffSpedizione:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            column: stoff_spedizione
+        stoffPrezzoOfferta:
+            type: float
+            nullable: true
+            precision: 15
+            scale: 3
+            column: stoff_prezzo_offerta
+        stiniOfferta:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            column: stini_offerta
+        stiniSpedizione:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            column: stini_spedizione
+        stiniPrezzoOfferta:
+            type: float
+            nullable: true
+            precision: 15
+            scale: 3
+            column: stini_prezzo_offerta
+    lifecycleCallbacks: {  }

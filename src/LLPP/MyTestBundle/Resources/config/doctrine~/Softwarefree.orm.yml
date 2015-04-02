@@ -1,0 +1,74 @@
+LLPP\MyTestBundle\Entity\Softwarefree:
+    type: entity
+    table: softwareFree
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        nome:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        autore:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        descrizione:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        link:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        sistemaoperativo:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: sistemaOperativo
+        tipo:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+        categoria:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        data:
+            type: date
+            nullable: true
+        approvato:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+        ndownload:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: nDownload
+        email:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        sito:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+    lifecycleCallbacks: {  }

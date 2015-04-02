@@ -1,0 +1,32 @@
+LLPP\MyTestBundle\Entity\Logaziende:
+    type: entity
+    table: logAziende
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        username:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: Username
+        password:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: Password
+        azienda:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: Azienda
+    lifecycleCallbacks: {  }

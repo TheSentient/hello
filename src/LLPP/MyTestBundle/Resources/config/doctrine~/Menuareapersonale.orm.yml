@@ -1,0 +1,24 @@
+LLPP\MyTestBundle\Entity\Menuareapersonale:
+    type: entity
+    table: menuAreaPersonale
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        testo:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        link:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+    lifecycleCallbacks: {  }

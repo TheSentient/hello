@@ -1,0 +1,4 @@
+services:
+#    llpp_my_test.example:
+#        class: LLPP\MyTestBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

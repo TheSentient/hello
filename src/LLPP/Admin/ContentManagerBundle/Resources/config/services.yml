@@ -1,0 +1,4 @@
+services:
+#    llpp_admin_content_manager.example:
+#        class: LLPP\Admin\ContentManagerBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

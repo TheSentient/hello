@@ -1,0 +1,43 @@
+LLPP\MyTestBundle\Entity\RiepilogoOrdini:
+    type: entity
+    table: riepilogo_ordini
+    id:
+        id:
+            type: bigint
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        idOrdine:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            column: id_ordine
+        idCliente:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: id_cliente
+        cliente:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        codice:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+        qta:
+            type: integer
+            nullable: true
+            unsigned: false
+        prezzo:
+            type: float
+            nullable: true
+            precision: 15
+            scale: 2
+    lifecycleCallbacks: {  }

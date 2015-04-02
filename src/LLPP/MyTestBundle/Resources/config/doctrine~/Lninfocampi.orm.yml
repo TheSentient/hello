@@ -1,0 +1,34 @@
+LLPP\MyTestBundle\Entity\Lninfocampi:
+    type: entity
+    table: lnInfoCampi
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        ordine:
+            type: integer
+            nullable: true
+            unsigned: false
+        testo:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        nomecampo:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: nomeCampo
+        tipo:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+    lifecycleCallbacks: {  }

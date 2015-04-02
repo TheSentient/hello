@@ -1,0 +1,47 @@
+LLPP\MyTestBundle\Entity\ArchivioOmaggi:
+    type: entity
+    table: archivio_omaggi
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        isbn:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+        titolo:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+        img:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+        note:
+            type: text
+            nullable: false
+            length: 65535
+            fixed: false
+        email:
+            type: text
+            nullable: false
+            length: 65535
+            fixed: false
+        attivo:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+    lifecycleCallbacks: {  }

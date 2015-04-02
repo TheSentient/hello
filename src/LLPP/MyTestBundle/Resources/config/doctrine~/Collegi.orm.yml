@@ -1,0 +1,86 @@
+LLPP\MyTestBundle\Entity\Collegi:
+    type: entity
+    table: collegi
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        cat:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            default: ''
+        categoria:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+        sottocategoria:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+        regione:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+        codRegione:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: cod_regione
+        indirizzo:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+        telefono:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+        fax:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+        url:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+        email1:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+        email2:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+        img:
+            type: string
+            nullable: false
+            length: 120
+            fixed: false
+            default: ''
+    lifecycleCallbacks: {  }

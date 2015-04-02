@@ -1,0 +1,76 @@
+LLPP\MyTestBundle\Entity\Richiestainformazioniacademy20131:
+    type: entity
+    table: richiestaInformazioniAcademy2013-1
+    id:
+        richiestaId:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: richiesta_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        contattatoIl:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            default: ''
+            column: contattato_il
+        ricontattareIl:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            default: ''
+            column: ricontattare_il
+        utente:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+        testo:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        emailInviata:
+            type: string
+            nullable: false
+            length: 2
+            fixed: false
+            default: NO
+            column: email_inviata
+        interessato:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+        eliminato:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: NO
+        aperto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+        venduto:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: NO
+        pagato:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: NO
+    lifecycleCallbacks: {  }

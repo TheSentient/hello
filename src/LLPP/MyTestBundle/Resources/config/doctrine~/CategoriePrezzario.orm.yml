@@ -1,0 +1,22 @@
+LLPP\MyTestBundle\Entity\CategoriePrezzario:
+    type: entity
+    table: categorie_prezzario
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        categoria:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        ordine:
+            type: integer
+            nullable: true
+            unsigned: false
+    lifecycleCallbacks: {  }

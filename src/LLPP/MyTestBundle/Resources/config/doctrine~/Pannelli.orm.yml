@@ -1,0 +1,23 @@
+LLPP\MyTestBundle\Entity\Pannelli:
+    type: entity
+    table: pannelli
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        nome:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        vista:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+    lifecycleCallbacks: {  }

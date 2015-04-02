@@ -1,0 +1,32 @@
+LLPP\MyTestBundle\Entity\AlertDisponibilitaLibri:
+    type: entity
+    table: alert_disponibilita_libri
+    indexes:
+        isbn:
+            columns:
+                - isbn
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        idutente:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: idUtente
+        isbn:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        alertsent:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: alertSent
+    lifecycleCallbacks: {  }

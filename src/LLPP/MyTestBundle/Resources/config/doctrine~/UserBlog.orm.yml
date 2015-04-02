@@ -1,0 +1,38 @@
+LLPP\MyTestBundle\Entity\UserBlog:
+    type: entity
+    table: user_blog
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        user:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        password:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        template:
+            type: string
+            nullable: true
+            length: 90
+            fixed: false
+        idCliente:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: id_cliente
+        foto:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+    lifecycleCallbacks: {  }

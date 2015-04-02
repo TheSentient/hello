@@ -1,0 +1,50 @@
+LLPP\MyTestBundle\Entity\Llppscontimanager:
+    type: entity
+    table: LLPPScontiManager
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        qtamaggioredi:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: qtaMaggioreDi
+        nomepromozione:
+            type: text
+            nullable: true
+            length: 255
+            fixed: false
+            column: nomePromozione
+        datainizio:
+            type: date
+            nullable: true
+            column: dataInizio
+        datafine:
+            type: date
+            nullable: true
+            column: dataFine
+        escluditipo:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: Nessuno
+            column: escludiTipo
+        escludivalori:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: escludiValori
+        sconto:
+            type: integer
+            nullable: true
+            unsigned: false
+    lifecycleCallbacks: {  }

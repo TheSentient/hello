@@ -1,0 +1,47 @@
+LLPP\MyTestBundle\Entity\Llppmenu:
+    type: entity
+    table: llppMenu
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        testo:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        parent:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        ordine:
+            type: integer
+            nullable: true
+            unsigned: false
+        linkalternativo:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: NO
+            column: linkAlternativo
+        link:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        haschild:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            default: NO
+            column: hasChild
+    lifecycleCallbacks: {  }

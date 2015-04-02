@@ -1,0 +1,26 @@
+LLPP\MyTestBundle\Entity\PhpbbWords:
+    type: entity
+    table: phpbb_words
+    id:
+        wordId:
+            type: integer
+            nullable: false
+            unsigned: true
+            id: true
+            column: word_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        word:
+            type: string
+            nullable: false
+            length: 100
+            fixed: true
+            default: ''
+        replacement:
+            type: string
+            nullable: false
+            length: 100
+            fixed: true
+            default: ''
+    lifecycleCallbacks: {  }

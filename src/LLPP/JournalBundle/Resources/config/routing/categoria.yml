@@ -1,0 +1,34 @@
+categoria:
+    path:     /
+    defaults: { _controller: "LLPPJournalBundle:Categoria:index" }
+
+categoria_ajax:
+    path:     /
+    defaults: { _controller: "LLPPJournalBundle:Categoria:indexAjax" }
+
+categoria_show:
+    path:     /{id}/show
+    defaults: { _controller: "LLPPJournalBundle:Categoria:show" }
+
+categoria_new:
+    path:     /new
+    defaults: { _controller: "LLPPJournalBundle:Categoria:new" }
+
+categoria_create:
+    path:     /create
+    defaults: { _controller: "LLPPJournalBundle:Categoria:create" }
+    requirements: { _method: post }
+
+categoria_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "LLPPJournalBundle:Categoria:edit" }
+
+categoria_update:
+    path:     /{id}/update
+    defaults: { _controller: "LLPPJournalBundle:Categoria:update" }
+    requirements: { _method: post|put }
+
+categoria_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "LLPPJournalBundle:Categoria:delete" }
+    requirements: { _method: post|delete }

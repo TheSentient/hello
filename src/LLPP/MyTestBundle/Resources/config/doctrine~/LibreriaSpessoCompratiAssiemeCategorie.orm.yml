@@ -1,0 +1,28 @@
+LLPP\MyTestBundle\Entity\LibreriaSpessoCompratiAssiemeCategorie:
+    type: entity
+    table: libreria_spesso_comprati_assieme_categorie
+    uniqueConstraints:
+        categoria:
+            columns:
+                - categorie
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        categorie:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        isbns:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: 'Inserire gli isbn separati da virgola'
+    lifecycleCallbacks: {  }

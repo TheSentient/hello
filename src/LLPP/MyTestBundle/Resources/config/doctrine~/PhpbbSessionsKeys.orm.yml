@@ -1,0 +1,38 @@
+LLPP\MyTestBundle\Entity\PhpbbSessionsKeys:
+    type: entity
+    table: phpbb_sessions_keys
+    indexes:
+        last_login:
+            columns:
+                - last_login
+    id:
+        keyId:
+            type: string
+            nullable: false
+            length: 32
+            fixed: false
+            default: '0'
+            id: true
+            column: key_id
+        userId:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: user_id
+    fields:
+        lastIp:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            default: '0'
+            column: last_ip
+        lastLogin:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: last_login
+    lifecycleCallbacks: {  }

@@ -1,0 +1,37 @@
+=no-padding($force: false, $sides...)
+  $important: if($force, !important, '')
+  @each $side in $sides
+    padding-#{$side}: 0 $important
+
+header
+  position: relative
+
+.big-nav-top.navbar
+  margin-bottom: 0
+
+.big-nav-top.navbar-brand
+  height: auto
+
+.big-nav-top.navbar-form
+  margin-top: 2px !important
+  margin-bottom: 2px !important
+  .form-control
+    height: 20px !important
+    +no-padding(true, top, bottom)
+  .btn
+    +no-padding(true, top, bottom)
+    font-size: 12px !important
+
+.big-nav-bottom.navbar-fixed-top
+  box-shadow: 0 3px 10px 0px #aaa
+
+.big-nav-bottom.navbar
+  min-height: 26px !important
+  a
+    padding-top: 3px !important
+    padding-bottom: 3px !important
+    height: 26px !important
+
+.big-nav-bottom.navbar-toggle
+  +no-padding(true, top, bottom)
+  padding: 5px 10px !important

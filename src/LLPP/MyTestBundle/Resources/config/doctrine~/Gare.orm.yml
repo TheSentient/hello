@@ -1,0 +1,69 @@
+LLPP\MyTestBundle\Entity\Gare:
+    type: entity
+    table: gare
+    indexes:
+        DATASCAD:
+            columns:
+                - DATASCAD
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        datascad:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: DATASCAD
+        ente:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            default: ''
+            column: ENTE
+        oggetto:
+            type: blob
+            nullable: false
+            length: 65535
+            fixed: false
+            column: OGGETTO
+        impopere:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: IMPOPERE
+        imponorario:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: IMPONORARIO
+        tipo:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: TIPO
+        new:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: 'false'
+            column: NEW
+        datascadenza:
+            type: string
+            nullable: false
+            length: 15
+            fixed: false
+            default: '0000-00-00'
+            column: DATASCADENZA
+    lifecycleCallbacks: {  }

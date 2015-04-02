@@ -1,0 +1,4 @@
+services:
+#    grafill_hello_world.example:
+#        class: Grafill\HelloWorldBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

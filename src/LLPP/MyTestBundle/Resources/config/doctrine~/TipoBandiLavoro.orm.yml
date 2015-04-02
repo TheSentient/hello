@@ -1,0 +1,23 @@
+LLPP\MyTestBundle\Entity\TipoBandiLavoro:
+    type: entity
+    table: tipo_bandi_lavoro
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        codice:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+        descrizione:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+    lifecycleCallbacks: {  }

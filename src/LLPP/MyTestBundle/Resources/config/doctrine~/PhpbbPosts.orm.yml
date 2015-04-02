@@ -1,0 +1,95 @@
+LLPP\MyTestBundle\Entity\PhpbbPosts:
+    type: entity
+    table: phpbb_posts
+    indexes:
+        forum_id:
+            columns:
+                - forum_id
+        topic_id:
+            columns:
+                - topic_id
+        poster_id:
+            columns:
+                - poster_id
+        post_time:
+            columns:
+                - post_time
+    id:
+        postId:
+            type: integer
+            nullable: false
+            unsigned: true
+            id: true
+            column: post_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        topicId:
+            type: integer
+            nullable: false
+            unsigned: true
+            default: '0'
+            column: topic_id
+        forumId:
+            type: smallint
+            nullable: false
+            unsigned: true
+            default: '0'
+            column: forum_id
+        posterId:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: poster_id
+        postTime:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: post_time
+        posterIp:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            default: ''
+            column: poster_ip
+        postUsername:
+            type: string
+            nullable: true
+            length: 25
+            fixed: false
+            column: post_username
+        enableBbcode:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: enable_bbcode
+        enableHtml:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: enable_html
+        enableSmilies:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: enable_smilies
+        enableSig:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: enable_sig
+        postEditTime:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: post_edit_time
+        postEditCount:
+            type: smallint
+            nullable: false
+            unsigned: true
+            default: '0'
+            column: post_edit_count
+    lifecycleCallbacks: {  }

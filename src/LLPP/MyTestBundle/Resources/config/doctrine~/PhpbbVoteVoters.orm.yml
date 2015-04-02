@@ -1,0 +1,35 @@
+LLPP\MyTestBundle\Entity\PhpbbVoteVoters:
+    type: entity
+    table: phpbb_vote_voters
+    indexes:
+        vote_user_id:
+            columns:
+                - vote_user_id
+        vote_user_ip:
+            columns:
+                - vote_user_ip
+    id:
+        voteId:
+            type: integer
+            nullable: false
+            unsigned: true
+            default: '0'
+            id: true
+            column: vote_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        voteUserId:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: vote_user_id
+        voteUserIp:
+            type: string
+            nullable: false
+            length: 8
+            fixed: true
+            default: ''
+            column: vote_user_ip
+    lifecycleCallbacks: {  }

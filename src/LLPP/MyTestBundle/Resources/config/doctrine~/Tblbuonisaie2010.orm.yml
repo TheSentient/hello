@@ -1,0 +1,41 @@
+LLPP\MyTestBundle\Entity\Tblbuonisaie2010:
+    type: entity
+    table: tblBuoniSaie2010
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idcliente:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idCliente
+        nominativo:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        idordine:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: idOrdine
+        importo:
+            type: float
+            nullable: true
+            precision: 15
+            scale: 2
+        spedito:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: NO
+    lifecycleCallbacks: {  }

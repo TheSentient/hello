@@ -1,0 +1,178 @@
+LLPP\MyTestBundle\Entity\ArchivioAziende:
+    type: entity
+    table: archivio_aziende
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        nome:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        imghome:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: imgHome
+        vetrina:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            default: NO
+        categoria:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        sottocategoria:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        logo:
+            type: string
+            nullable: true
+            length: 120
+            fixed: false
+        indirizzo:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        cap:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+        citta:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        prov:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+        regione:
+            type: string
+            nullable: true
+            length: 150
+            fixed: false
+        url:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        urlName:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: url_name
+        email:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        prefisso:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+        telefono:
+            type: string
+            nullable: true
+            length: 150
+            fixed: false
+        fax:
+            type: string
+            nullable: true
+            length: 150
+            fixed: false
+        descrizione:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        brochure:
+            type: string
+            nullable: true
+            length: 180
+            fixed: false
+        user:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+        pass:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+        nominativoReferente:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+            column: nominativo_referente
+        emailReferente:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: email_referente
+        bannerRichiestainfo:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: banner_richiestaInfo
+        linkRichiestainfo:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: link_richiestaInfo
+        contatoreRichiestainfo:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: contatore_richiestaInfo
+        contatore:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+        pubblicato:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: SI
+        professionista:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            default: NO
+        idprofessionista:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idProfessionista
+        guid:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+    lifecycleCallbacks: {  }

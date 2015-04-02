@@ -1,0 +1,34 @@
+LLPP\MyTestBundle\Entity\Prezzari:
+    type: entity
+    table: prezzari
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        titolo:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        link:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        tipolink:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            column: tipoLink
+        contatore:
+            type: integer
+            nullable: false
+            unsigned: false
+    lifecycleCallbacks: {  }

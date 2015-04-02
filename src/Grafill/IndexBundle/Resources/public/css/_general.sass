@@ -1,0 +1,91 @@
+/* CONSTANTS */
+$head-color: #A72330 //bordeaux
+$light-back: #eeeeee // light gray
+
+$head-font: 'Khula', 'Helvetica Neue', Helvetica, Arial, sans-serif
+$journal-font: Georgia, Times New Roman
+
+/* MIXINS */
+=journal-font-style($weight: 700, $size: false, $color: false)
+    font-family: $journal-font !important
+    font-weight: $weight !important
+    line-height: 120% !important
+    @if ($size)
+        font-size: $size !important
+    @if ($color)
+        color: $color
+
+=app-font-style($weight: 400, $size: false, $color: false)
+    font-family: $head-font !important
+    font-weight: $weight !important
+    line-height: 120% !important
+    @if ($size)
+        font-size: $size !important
+    @if ($color)
+        color: $color
+
+=custom-border($sides...)
+    $first-loop: 1
+    $background: ""
+    @each $side in $sides
+        $params: ""
+        @if ($side == top)
+            $params: url('/images/dot-x.svg') repeat-x center top
+        @else if ($side == bottom)
+            $params: url('/images/dot-x.svg') repeat-x center bottom
+        @else if ($side == left)
+            $params: url('/images/dot-y.svg') repeat-y left center
+        @else if ($side == right)
+            $params: url('/images/dot-y.svg') repeat-y right center
+
+        @if ($first-loop == 1)
+            $background: $params
+            $first-loop: 0
+        @else
+            $background: $background, $params
+
+    background: $background
+
+=no-padding($force: false)
+    $important: if($force, !important, "")
+    $sides: top, bottom
+    @each $side in $sides
+        padding-#{$side}: 0 $important
+
+/* GENERAL RULES */
+body
+    +app-font-style()
+
+.head-color
+    color: $head-color !important
+
+.inclined-dotted-box
+    overflow: hidden
+    width: 19px
+    height: 20px
+    position: relative
+    box-shadow: 1px 2px 0px 1px white inset
+    img
+        display: inline-block
+        float: left
+        position: absolute
+        bottom: -3px
+        left: -1px
+
+
+.loading
+    display: none
+    opacity: 0
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    text-align: center
+    padding-top: 43vh
+    background-color: rgba(255, 255, 255, 0.4)
+    z-index: 5
+    +single-transition(all, 1s, false, false)
+    &.active
+        opacity: 1
+        display: block    

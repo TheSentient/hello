@@ -1,0 +1,32 @@
+LLPP\MyTestBundle\Entity\Llppncollegamenti:
+    type: entity
+    table: LLPPNCollegamenti
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idprofessionista:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idProfessionista
+        idamico:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idAmico
+        quando:
+            type: date
+            nullable: true
+        attivo:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+    lifecycleCallbacks: {  }

@@ -1,0 +1,33 @@
+LLPP\MyTestBundle\Entity\Sanatoria:
+    type: entity
+    table: sanatoria
+    id:
+        tipologia:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: TIPOLOGIA
+            generator:
+                strategy: IDENTITY
+    fields:
+        residenziale:
+            type: float
+            nullable: true
+            precision: 6
+            scale: 2
+            column: RESIDENZIALE
+        nonresidenziale:
+            type: float
+            nullable: true
+            precision: 6
+            scale: 2
+            column: NONRESIDENZIALE
+        forfait:
+            type: float
+            nullable: true
+            precision: 6
+            scale: 2
+            column: FORFAIT
+    lifecycleCallbacks: {  }

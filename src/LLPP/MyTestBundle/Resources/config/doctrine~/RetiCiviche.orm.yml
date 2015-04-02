@@ -1,0 +1,33 @@
+LLPP\MyTestBundle\Entity\RetiCiviche:
+    type: entity
+    table: reti_civiche
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        tipo:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+        ente:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        link:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        ordine:
+            type: string
+            nullable: true
+            length: 2
+            fixed: true
+    lifecycleCallbacks: {  }

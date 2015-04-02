@@ -1,0 +1,22 @@
+LLPP\MyTestBundle\Entity\Richiestecontatti:
+    type: entity
+    table: richiesteContatti
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        numero:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        data:
+            type: datetime
+            nullable: false
+            default: CURRENT_TIMESTAMP
+    lifecycleCallbacks: {  }

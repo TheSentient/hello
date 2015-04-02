@@ -1,0 +1,62 @@
+{% set navLinks = ['Home', 'Servizi', 'E-commerce', 'Libri&Software', 'Il periodico', 'Aziende', 'Prodotti', 'Professionisti', 'Sondaggi', 'Focus' ] %}
+<header>
+  <nav class="big-nav-top navbar navbar-default">
+    <div class="container-fluid">
+  
+      <div class="navbar-header">
+        <a class="big-nav-top navbar-brand" href="#">
+          <img src="images/headerBg.jpg" id="logo-nav" alt="lavori pubblici logo" />
+        </a>
+      </div>
+  
+      <form class="big-nav-top navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Cerca nel sito"> 
+        </div>
+        <button type="submit" class="btn btn-default">
+          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+        </button>
+      </form>
+    </div>
+  </nav>
+  
+  <nav class="big-nav-bottom navbar navbar-default">
+    <div class="container-fluid">
+  
+    	<!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="big-nav-bottom navbar-toggle collapsed"
+        						data-toggle="collapse"
+        						data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div><!-- /navbar-header -->
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+        {% for link in navLinks %}
+          <li><a href="#">{{link}}</a></li>
+        {% endfor %}
+        </ul>
+      </div><!-- /navbar-collpse -->
+  
+    </div><!-- /container-fluid -->
+  </nav>
+</header>
+<script type="text/javascript">
+  $(function() {
+    var nav = $('nav.big-nav-bottom');
+    var fixedClass = 'navbar-fixed-top';
+
+    $(document).scroll(function(e) {
+      if($(this).scrollTop() > 145)
+        nav.addClass(fixedClass);
+      else
+        nav.removeClass(fixedClass);
+    });
+  });
+</script>

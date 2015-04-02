@@ -1,0 +1,39 @@
+<?php
+
+namespace Grafill\ManagerBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * TipiArticoliVendita
+ *
+ * @ORM\Table(name="tipi_articoli_vendita")
+ * @ORM\Entity
+ */
+class TipiArticoliVendita
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nome", type="string", length=50, nullable=false)
+     */
+    private $nome;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="iva", type="integer", nullable=false)
+     */
+    private $iva;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+
+}

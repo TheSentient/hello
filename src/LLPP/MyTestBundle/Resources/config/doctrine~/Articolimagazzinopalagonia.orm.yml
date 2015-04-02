@@ -1,0 +1,44 @@
+LLPP\MyTestBundle\Entity\Articolimagazzinopalagonia:
+    type: entity
+    table: articoliMagazzinoPalagonia
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        codice:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: CODICE
+        titolo:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: TITOLO
+        qta:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: QTA
+        fuoriCatalogo:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: NO
+            column: FUORI_CATALOGO
+        editore:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: EDITORE
+    lifecycleCallbacks: {  }

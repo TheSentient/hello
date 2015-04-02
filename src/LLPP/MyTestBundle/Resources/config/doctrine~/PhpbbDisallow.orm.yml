@@ -1,0 +1,21 @@
+LLPP\MyTestBundle\Entity\PhpbbDisallow:
+    type: entity
+    table: phpbb_disallow
+    id:
+        disallowId:
+            type: integer
+            nullable: false
+            unsigned: true
+            id: true
+            column: disallow_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        disallowUsername:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+            column: disallow_username
+    lifecycleCallbacks: {  }

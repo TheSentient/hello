@@ -1,0 +1,67 @@
+<?php
+
+namespace Grafill\ManagerBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Focus
+ *
+ * @ORM\Table(name="focus")
+ * @ORM\Entity
+ */
+class Focus
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nome", type="text", nullable=false)
+     */
+    private $nome;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="link", type="text", nullable=true)
+     */
+    private $link;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="img", type="text", nullable=true)
+     */
+    private $img;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="categoria", type="string", length=20, nullable=true)
+     */
+    private $categoria;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="banner", type="text", nullable=true)
+     */
+    private $banner;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="testo", type="text", nullable=true)
+     */
+    private $testo;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="ID", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+
+}

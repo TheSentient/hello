@@ -1,0 +1,23 @@
+LLPP\MyTestBundle\Entity\CategorieNotizieHome:
+    type: entity
+    table: categorie_notizie_home
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        categoria:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        colore:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+    lifecycleCallbacks: {  }

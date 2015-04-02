@@ -1,0 +1,28 @@
+LLPP\MyTestBundle\Entity\SessioniVariabili:
+    type: entity
+    table: sessioni_variabili
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        sessione:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        variabile:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        valore:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+    lifecycleCallbacks: {  }

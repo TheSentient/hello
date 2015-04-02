@@ -1,0 +1,181 @@
+LLPP\MyTestBundle\Entity\Clientillpp:
+    type: entity
+    table: ClientiLLPP
+    indexes:
+        facebook_id:
+            columns:
+                - facebook_id
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        username:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: Username
+        password:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: Password
+        nome:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Nome
+        cognome:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: Cognome
+        email:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: Email
+        professione:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            default: 'Altra professione'
+            column: Professione
+        societa:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            column: Societa
+        codicefiscale:
+            type: string
+            nullable: true
+            length: 17
+            fixed: false
+            column: CodiceFiscale
+        partitaiva:
+            type: string
+            nullable: true
+            length: 12
+            fixed: false
+            column: PartitaIva
+        indirizzo:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            column: Indirizzo
+        numerocivico:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: NumeroCivico
+        citta:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: Citta
+        cap:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: Cap
+        regione:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: Regione
+        provincia:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: Provincia
+        telefono:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Telefono
+        cellulare:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Cellulare
+        fax:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: Fax
+        modalitapagamento:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: ModalitaPagamento
+        modalitaspedizione:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: ModalitaSpedizione
+        attivo:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            default: NO
+            column: Attivo
+        refindirizzospedizione:
+            type: integer
+            nullable: true
+            unsigned: false
+            default: '0'
+            column: RefIndirizzoSpedizione
+        refindirizzofatturazione:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: RefIndirizzoFatturazione
+        quando:
+            type: datetime
+            nullable: true
+        facebookId:
+            type: bigint
+            nullable: true
+            unsigned: true
+            column: facebook_id
+        googlePlusId:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: google_plus_id
+        twitterId:
+            type: bigint
+            nullable: true
+            unsigned: true
+            column: twitter_id
+        linkedinId:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: linkedin_id
+    lifecycleCallbacks: {  }

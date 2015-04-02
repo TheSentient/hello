@@ -1,0 +1,43 @@
+LLPP\MyTestBundle\Entity\BoxNewsletter:
+    type: entity
+    table: box_newsletter
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        tipo:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        dataInizio:
+            type: date
+            nullable: true
+            column: data_inizio
+        dataFine:
+            type: date
+            nullable: true
+            column: data_fine
+        ordine:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+        sfondo:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: SFONDO
+        font:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: FONT
+    lifecycleCallbacks: {  }

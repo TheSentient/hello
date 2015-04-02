@@ -1,0 +1,33 @@
+LLPP\MyTestBundle\Entity\Gift:
+    type: entity
+    table: gift
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        regalo:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        attivo:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+        img:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+        titolo:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+    lifecycleCallbacks: {  }

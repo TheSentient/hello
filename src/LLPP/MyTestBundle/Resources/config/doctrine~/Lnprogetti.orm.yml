@@ -1,0 +1,72 @@
+LLPP\MyTestBundle\Entity\Lnprogetti:
+    type: entity
+    table: lnProgetti
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idCliente:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: id_cliente
+        nomeprogetto:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: nomeProgetto
+        duratalavori:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: durataLavori
+        dittalavori:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: dittaLavori
+        cittalavori:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: cittaLavori
+        indirizzolavori:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: indirizzoLavori
+        statolavori:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: statoLavori
+        destinazionelavori:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: destinazioneLavori
+        descrizionelavori:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: descrizioneLavori
+        imgprogetto:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: imgProgetto
+    lifecycleCallbacks: {  }

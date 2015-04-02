@@ -1,0 +1,33 @@
+LLPP\MyTestBundle\Entity\Llppsidemenu:
+    type: entity
+    table: LLPPSideMenu
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        testo:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        link:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        posizione:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+        ordine:
+            type: integer
+            nullable: true
+            unsigned: false
+    lifecycleCallbacks: {  }

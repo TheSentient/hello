@@ -1,0 +1,36 @@
+LLPP\MyTestBundle\Entity\PhpbbForumPrune:
+    type: entity
+    table: phpbb_forum_prune
+    indexes:
+        forum_id:
+            columns:
+                - forum_id
+    id:
+        pruneId:
+            type: integer
+            nullable: false
+            unsigned: true
+            id: true
+            column: prune_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        forumId:
+            type: smallint
+            nullable: false
+            unsigned: true
+            default: '0'
+            column: forum_id
+        pruneDays:
+            type: smallint
+            nullable: false
+            unsigned: true
+            default: '0'
+            column: prune_days
+        pruneFreq:
+            type: smallint
+            nullable: false
+            unsigned: true
+            default: '0'
+            column: prune_freq
+    lifecycleCallbacks: {  }

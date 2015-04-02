@@ -1,0 +1,116 @@
+LLPP\MyTestBundle\Entity\Fatture:
+    type: entity
+    table: fatture
+    id:
+        fatturaId:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: fattura_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        userId:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: user_id
+        nome:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        cognome:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        indirizzo:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        importo:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+        datetime:
+            type: datetime
+            nullable: false
+        ordineId:
+            type: string
+            nullable: false
+            length: 225
+            fixed: false
+            column: ordine_id
+        imponibileIva21:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            comment: 'Totale in fatture dei prodotti con iva al 21'
+            column: imponibile_iva_21
+        imponibileIva4Assolta:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            comment: 'Totale dei prodotti con iva al 4 assolta dall''editore'
+            column: imponibile_iva_4_assolta
+        imponibileIvaEsente:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            comment: 'Totale prodotti esenti da iva'
+            column: imponibile_iva_esente
+        iva21:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            comment: 'Totale iva da pagare al 21'
+            column: iva_21
+        costoSpedizione:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            default: '0'
+            column: costo_spedizione
+        costoPagamento:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            default: '0'
+            column: costo_pagamento
+        codiceSpedizione:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: codice_spedizione
+        codicePagamento:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: codice_pagamento
+        tipologiaProdotti:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: tipologia_prodotti
+        origine:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: LAVORIPUBBLICI
+        annoFiscale:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: anno_fiscale
+    lifecycleCallbacks: {  }

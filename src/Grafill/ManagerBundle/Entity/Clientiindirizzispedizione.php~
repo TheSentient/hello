@@ -1,0 +1,95 @@
+<?php
+
+namespace Grafill\ManagerBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Clientiindirizzispedizione
+ *
+ * @ORM\Table(name="clientiindirizzispedizione")
+ * @ORM\Entity
+ */
+class Clientiindirizzispedizione
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="IDCliente", type="integer", nullable=true)
+     */
+    private $idcliente;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="denominazioneSpedizione", type="string", length=255, nullable=true)
+     */
+    private $denominazionespedizione;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Indirizzo", type="string", length=255, nullable=true)
+     */
+    private $indirizzo;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="NomeDestinatario", type="string", length=70, nullable=true)
+     */
+    private $nomedestinatario;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="CognomeDestinatario", type="string", length=255, nullable=true)
+     */
+    private $cognomedestinatario;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="NumeroCivico", type="string", length=20, nullable=true)
+     */
+    private $numerocivico;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Citta", type="string", length=80, nullable=true)
+     */
+    private $citta;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="Cap", type="integer", nullable=true)
+     */
+    private $cap;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Regione", type="string", length=20, nullable=true)
+     */
+    private $regione;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Provincia", type="string", length=30, nullable=true)
+     */
+    private $provincia;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="ID", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+
+}

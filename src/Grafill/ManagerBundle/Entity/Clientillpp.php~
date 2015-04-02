@@ -1,0 +1,228 @@
+<?php
+
+namespace Grafill\ManagerBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Clientillpp
+ *
+ * @ORM\Table(name="clientillpp", indexes={@ORM\Index(name="facebook_id", columns={"facebook_id"})})
+ * @ORM\Entity
+ */
+class Clientillpp
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Username", type="string", length=60, nullable=true)
+     */
+    private $username;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Password", type="string", length=30, nullable=true)
+     */
+    private $password;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Nome", type="string", length=40, nullable=true)
+     */
+    private $nome;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Cognome", type="string", length=40, nullable=true)
+     */
+    private $cognome;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Email", type="string", length=50, nullable=true)
+     */
+    private $email;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Professione", type="string", length=30, nullable=true)
+     */
+    private $professione;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Societa", type="string", length=100, nullable=true)
+     */
+    private $societa;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="CodiceFiscale", type="string", length=17, nullable=true)
+     */
+    private $codicefiscale;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="PartitaIva", type="string", length=12, nullable=true)
+     */
+    private $partitaiva;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Indirizzo", type="string", length=100, nullable=true)
+     */
+    private $indirizzo;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="NumeroCivico", type="string", length=20, nullable=true)
+     */
+    private $numerocivico;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Citta", type="string", length=80, nullable=true)
+     */
+    private $citta;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Cap", type="string", length=20, nullable=true)
+     */
+    private $cap;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Regione", type="string", length=20, nullable=true)
+     */
+    private $regione;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Provincia", type="string", length=30, nullable=true)
+     */
+    private $provincia;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Telefono", type="string", length=15, nullable=true)
+     */
+    private $telefono;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Cellulare", type="string", length=15, nullable=true)
+     */
+    private $cellulare;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Fax", type="string", length=15, nullable=true)
+     */
+    private $fax;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="ModalitaPagamento", type="integer", nullable=true)
+     */
+    private $modalitapagamento;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="ModalitaSpedizione", type="integer", nullable=true)
+     */
+    private $modalitaspedizione;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Attivo", type="string", length=50, nullable=true)
+     */
+    private $attivo;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="RefIndirizzoSpedizione", type="integer", nullable=true)
+     */
+    private $refindirizzospedizione;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="RefIndirizzoFatturazione", type="integer", nullable=false)
+     */
+    private $refindirizzofatturazione;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="quando", type="datetime", nullable=true)
+     */
+    private $quando;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="facebook_id", type="bigint", nullable=true)
+     */
+    private $facebookId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="google_plus_id", type="string", length=255, nullable=true)
+     */
+    private $googlePlusId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="twitter_id", type="bigint", nullable=true)
+     */
+    private $twitterId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="linkedin_id", type="string", length=255, nullable=true)
+     */
+    private $linkedinId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="social_avatar", type="string", length=255, nullable=true)
+     */
+    private $socialAvatar;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="ID", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+
+}

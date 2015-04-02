@@ -1,0 +1,28 @@
+LLPP\MyTestBundle\Entity\ArchivioCategorie:
+    type: entity
+    table: archivio_categorie
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        codice:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+        categoria:
+            type: string
+            nullable: true
+            length: 120
+            fixed: false
+        sottocategoria:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+    lifecycleCallbacks: {  }

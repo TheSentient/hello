@@ -1,0 +1,66 @@
+LLPP\MyTestBundle\Entity\Ordiniindirizzispedizione:
+    type: entity
+    table: ordiniIndirizziSpedizione
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idcliente:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idCliente
+        numOrdine:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: num_ordine
+        nomedestinatario:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: nomeDestinatario
+        cognomedestinatario:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: cognomeDestinatario
+        indirizzodestinatario:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: indirizzoDestinatario
+        numerocivicodestinatario:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: numeroCivicoDestinatario
+        cittadestinatario:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: cittaDestinatario
+        capdestinatario:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: capDestinatario
+        provinciadestinatario:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: provinciaDestinatario
+    lifecycleCallbacks: {  }

@@ -1,0 +1,17 @@
+LLPP\MyTestBundle\Entity\Table1:
+    type: entity
+    table: table1
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        ff:
+            type: integer
+            nullable: true
+            unsigned: false
+    lifecycleCallbacks: {  }

@@ -1,0 +1,28 @@
+LLPP\MyTestBundle\Entity\SaveValue:
+    type: entity
+    table: save_value
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        valore:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+        variabile:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+        sessione:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+    lifecycleCallbacks: {  }

@@ -1,0 +1,24 @@
+LLPP\MyTestBundle\Entity\Gazzette:
+    type: entity
+    table: gazzette
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        titolo:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        link:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+    lifecycleCallbacks: {  }

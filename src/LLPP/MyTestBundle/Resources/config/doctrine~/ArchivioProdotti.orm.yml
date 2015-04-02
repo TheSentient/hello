@@ -1,0 +1,138 @@
+LLPP\MyTestBundle\Entity\ArchivioProdotti:
+    type: entity
+    table: archivio_prodotti
+    repositoryClass: LLPP\MyTestBundle\Entity\ArchivioProdottiRepository
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        nomeProdotto:
+            type: string
+            nullable: true
+            length: 150
+            fixed: false
+            column: nome_prodotto
+        codiceProdotto:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: codice_prodotto
+        imghome:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: imgHome
+        vetrina:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: NO
+        categoria:
+            type: string
+            nullable: true
+            length: 120
+            fixed: false
+        sottocategoria:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+        codiceAzienda:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: codice_azienda
+        nomeAzienda:
+            type: string
+            nullable: true
+            length: 150
+            fixed: false
+            column: nome_azienda
+        codiciCategoria:
+            type: string
+            nullable: true
+            length: 150
+            fixed: false
+            column: codici_categoria
+        sottotitoloProdotto:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+            column: sottotitolo_prodotto
+        imgProdotto:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: img_prodotto
+        descrizioneProdotto:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: descrizione_prodotto
+        descrizioneBreve:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: descrizione_breve
+        caratteristicheTecniche:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: caratteristiche_tecniche
+        approfondimento:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+        allegati:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        novita:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            default: NO
+        evidenza:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: SI
+        ordinevetrina:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: ordineVetrina
+        contatore:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+        pubblicato:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            default: SI
+        datascadenza:
+            type: date
+            nullable: true
+            column: dataScadenza
+    lifecycleCallbacks: {  }

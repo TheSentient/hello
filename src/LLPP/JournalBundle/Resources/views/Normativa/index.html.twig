@@ -1,0 +1,51 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Normativa list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Titolo</th>
+                <th>Oggetto</th>
+                <th>Datanormativa</th>
+                <th>Gazzettaufficiale</th>
+                <th>Contenuto</th>
+                <th>Datainserimento</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('normativa_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{{ entity.titolo }}</td>
+                <td>{{ entity.oggetto }}</td>
+                <td>{% if entity.dataNormativa %}{{ entity.dataNormativa|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.gazzettaUfficiale }}</td>
+                <td>{{ entity.contenuto }}</td>
+                <td>{% if entity.dataInserimento %}{{ entity.dataInserimento|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('normativa_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('normativa_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('normativa_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

@@ -1,0 +1,27 @@
+LLPP\MyTestBundle\Entity\Llppabbonaticomunicazioni:
+    type: entity
+    table: LLPPAbbonatiComunicazioni
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        data:
+            type: date
+            nullable: true
+        comunicazione:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        riferimento:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+    lifecycleCallbacks: {  }

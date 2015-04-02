@@ -1,0 +1,92 @@
+LLPP\MyTestBundle\Entity\PhpbbAuthAccess:
+    type: entity
+    table: phpbb_auth_access
+    indexes:
+        group_id:
+            columns:
+                - group_id
+        forum_id:
+            columns:
+                - forum_id
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        groupId:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: group_id
+        forumId:
+            type: smallint
+            nullable: false
+            unsigned: true
+            default: '0'
+            column: forum_id
+        authView:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: auth_view
+        authRead:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: auth_read
+        authPost:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: auth_post
+        authReply:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: auth_reply
+        authEdit:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: auth_edit
+        authDelete:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: auth_delete
+        authSticky:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: auth_sticky
+        authAnnounce:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: auth_announce
+        authVote:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: auth_vote
+        authPollcreate:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: auth_pollcreate
+        authAttachments:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: auth_attachments
+        authMod:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: auth_mod
+    lifecycleCallbacks: {  }

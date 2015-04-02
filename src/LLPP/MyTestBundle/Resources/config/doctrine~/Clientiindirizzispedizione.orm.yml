@@ -1,0 +1,72 @@
+LLPP\MyTestBundle\Entity\Clientiindirizzispedizione:
+    type: entity
+    table: ClientiIndirizziSpedizione
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idcliente:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: IDCliente
+        denominazionespedizione:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: denominazioneSpedizione
+        indirizzo:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: Indirizzo
+        nomedestinatario:
+            type: string
+            nullable: true
+            length: 70
+            fixed: false
+            column: NomeDestinatario
+        cognomedestinatario:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: CognomeDestinatario
+        numerocivico:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: NumeroCivico
+        citta:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            column: Citta
+        cap:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Cap
+        regione:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: Regione
+        provincia:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: Provincia
+    lifecycleCallbacks: {  }

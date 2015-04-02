@@ -1,0 +1,207 @@
+<?php
+
+namespace Grafill\ManagerBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Libreria
+ *
+ * @ORM\Table(name="libreria", uniqueConstraints={@ORM\UniqueConstraint(name="CODICE", columns={"CODICE"})})
+ * @ORM\Entity
+ */
+class Libreria
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="CODICE", type="string", length=30, nullable=false)
+     */
+    private $codice;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="AUTORE", type="string", length=150, nullable=true)
+     */
+    private $autore;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="TITOLO", type="string", length=250, nullable=true)
+     */
+    private $titolo;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="TITOLO_RIDOTTO", type="string", length=200, nullable=true)
+     */
+    private $titoloRidotto;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="ANNO", type="string", length=50, nullable=false)
+     */
+    private $anno;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="IMG", type="string", length=64, nullable=true)
+     */
+    private $img;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="EDITORE", type="string", length=200, nullable=false)
+     */
+    private $editore;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="NOVITA", type="string", length=50, nullable=false)
+     */
+    private $novita;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="DESCRIZIONE", type="text", nullable=true)
+     */
+    private $descrizione;
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="PREZZO", type="float", precision=10, scale=2, nullable=true)
+     */
+    private $prezzo;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="COLLANA", type="string", length=40, nullable=true)
+     */
+    private $collana;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="INFORMAZIONI_SUPPLEMENTARI", type="text", nullable=true)
+     */
+    private $informazioniSupplementari;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="CD", type="integer", nullable=true)
+     */
+    private $cd;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="TESTI_CORRELATI", type="string", length=250, nullable=true)
+     */
+    private $testiCorrelati;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="INDICE_LIBRO", type="text", nullable=true)
+     */
+    private $indiceLibro;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="VETRINA", type="string", length=50, nullable=true)
+     */
+    private $vetrina;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="KEYWORDS", type="text", nullable=true)
+     */
+    private $keywords;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="AGGIORNAMENTO", type="string", length=200, nullable=true)
+     */
+    private $aggiornamento;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="DISPONIBILE", type="string", length=50, nullable=false)
+     */
+    private $disponibile;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="PUBBLICATO", type="string", length=50, nullable=false)
+     */
+    private $pubblicato;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="CONTATORE", type="integer", nullable=false)
+     */
+    private $contatore;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="CONTATOREMENSILE", type="integer", nullable=false)
+     */
+    private $contatoremensile;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="QTA", type="integer", nullable=true)
+     */
+    private $qta;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="FUORI_CATALOGO", type="string", length=50, nullable=false)
+     */
+    private $fuoriCatalogo;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="MIPIACI", type="integer", nullable=false)
+     */
+    private $mipiaci;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="IVA", type="string", length=50, nullable=true)
+     */
+    private $iva;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="ID", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+
+}

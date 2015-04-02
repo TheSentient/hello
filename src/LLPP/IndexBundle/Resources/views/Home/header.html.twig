@@ -1,0 +1,155 @@
+{% set navLinks = ['Home', 'Servizi', 'E-commerce', 'Libri&Software', 'Il periodico', 'Aziende', 'Prodotti', 'Professionisti', 'Sondaggi', 'Focus' ] %}
+<header class="row">
+  <nav class="big-nav-top navbar navbar-default navbar-fixed-top">
+    <div id="main-nav-container" class="container">
+
+      <div class="navbar-header">
+        <a class="big-nav-top navbar-brand" href="#" on-scroll>
+          <img src="{{ asset('assets/immagini/logo-small.png') }}" alt="Lavori Pubblici Logo Small"/>
+        </a>
+        <button type="button" class="big-nav-bottom navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="#">
+            <form class="big-nav-top navbar-form navbar-right" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Cerca nel sito"> 
+              </div>
+              <button type="submit" class="btn btn-default">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+              </button>
+            </form>
+          </a>
+        </li>
+        <li class="dropdown">
+          {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+              {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }}
+              <span class="glyphicon glyphicon-user" aria-hidden="true"></span><span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a href="{{ path('fos_user_security_logout') }}">
+                  {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+                </a>
+              </li>
+            </ul>
+          {% else %}
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+              <span class="glyphicon glyphicon-user" aria-hidden="true"></span><span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a href="#">
+                  <modal-button url="/login?frag=true" title="Login">
+                    <i class="fa fa-sign-in"></i> Login
+                  </modal-button>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <modal-button url="/register?frag=true" title="Registrati">
+                    <i class="fa fa-pencil"></i> Registrati
+                  </modal-button>
+                </a>
+              </li>
+            </ul>
+          {% endif %}
+        </li>
+      </ul>
+      </div> <!-- /navbar-collpse -->
+    </div>
+  </nav>
+</header>
+
+{#
+<!--<header class="row">-->
+  <nav class="big-nav-top navbar navbar-default navbar-fixed-top">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="navbar-header">
+          <a class="big-nav-top navbar-brand" href="#" on-scroll>
+            <img src="/images/logo-small.png" alt="Lavori Pubblici Logo Small"/>
+          </a>
+          <button type="button" class="big-nav-bottom navbar-toggle collapsed"
+                      data-toggle="collapse"
+                      data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+      </div>
+        <div id="main-nav-center" class="col-md-8">
+          <div class="container-fluid">
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#">
+                <form class="big-nav-top navbar-form navbar-right" role="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Cerca nel sito"> 
+                  </div>
+                  <button type="submit" class="btn btn-default">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                  </button>
+                </form>
+              </a>
+            </li>
+            <li class="dropdown">
+              {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                  {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }}
+                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span><span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li>
+                    <a href="{{ path('fos_user_security_logout') }}">
+                      {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+                    </a>
+                  </li>
+                </ul>
+              {% else %}
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span><span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li>
+                    <a href="#">
+                      <modal-button url="/login?frag=true" title="Login">
+                        <i class="fa fa-sign-in"></i> Login
+                      </modal-button>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <modal-button url="/register?frag=true" title="Registrati">
+                        <i class="fa fa-pencil"></i> Registrati
+                      </modal-button>
+                    </a>
+                  </li>
+                </ul>
+              {% endif %}
+            </li>
+          </ul>
+        </div> <!-- /navbar-collpse -->
+      </div> <!-- /container-fluid -->
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  </nav>
+<!--</header>-->
+#}

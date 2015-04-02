@@ -1,0 +1,33 @@
+LLPP\MyTestBundle\Entity\Regioni:
+    type: entity
+    table: regioni
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        sigla:
+            type: string
+            nullable: true
+            length: 5
+            fixed: false
+        prov:
+            type: string
+            nullable: true
+            length: 120
+            fixed: false
+        cap:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+        regione:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+    lifecycleCallbacks: {  }

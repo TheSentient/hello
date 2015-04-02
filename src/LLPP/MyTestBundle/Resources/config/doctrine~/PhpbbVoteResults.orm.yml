@@ -1,0 +1,44 @@
+LLPP\MyTestBundle\Entity\PhpbbVoteResults:
+    type: entity
+    table: phpbb_vote_results
+    indexes:
+        vote_option_id:
+            columns:
+                - vote_option_id
+        vote_id:
+            columns:
+                - vote_id
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        voteId:
+            type: integer
+            nullable: false
+            unsigned: true
+            default: '0'
+            column: vote_id
+        voteOptionId:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: vote_option_id
+        voteOptionText:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: vote_option_text
+        voteResult:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: vote_result
+    lifecycleCallbacks: {  }

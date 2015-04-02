@@ -1,0 +1,28 @@
+LLPP\MyTestBundle\Entity\Fornitori:
+    type: entity
+    table: fornitori
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        codice:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+        intestazione:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        azienda:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+    lifecycleCallbacks: {  }

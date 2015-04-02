@@ -1,0 +1,19 @@
+LLPP\MyTestBundle\Entity\Stato:
+    type: entity
+    table: stato
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        stato:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            default: NO
+    lifecycleCallbacks: {  }

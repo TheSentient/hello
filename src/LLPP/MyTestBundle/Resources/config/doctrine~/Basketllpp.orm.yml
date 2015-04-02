@@ -1,0 +1,35 @@
+LLPP\MyTestBundle\Entity\Basketllpp:
+    type: entity
+    table: basketLLPP
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        sessione:
+            type: string
+            nullable: true
+            length: 45
+            fixed: false
+        codiceitem:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            column: codiceItem
+        qta:
+            type: integer
+            nullable: true
+            unsigned: false
+        prezzounitario:
+            type: float
+            nullable: true
+            precision: 15
+            scale: 2
+            column: prezzoUnitario
+    lifecycleCallbacks: {  }

@@ -1,0 +1,144 @@
+<?php
+
+namespace Grafill\ManagerBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Normative
+ *
+ * @ORM\Table(name="normative")
+ * @ORM\Entity
+ */
+class Normative
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="titolo", type="string", length=200, nullable=true)
+     */
+    private $titolo;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="sottotitolo", type="string", length=200, nullable=true)
+     */
+    private $sottotitolo;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="tipo_novita", type="string", length=300, nullable=true)
+     */
+    private $tipoNovita;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="titolo_novita", type="text", nullable=true)
+     */
+    private $titoloNovita;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="data_normative", type="date", nullable=true)
+     */
+    private $dataNormative;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="gazzetta_ufficiale", type="string", length=200, nullable=true)
+     */
+    private $gazzettaUfficiale;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="imagine", type="string", length=200, nullable=true)
+     */
+    private $imagine;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="testo", type="text", nullable=true)
+     */
+    private $testo;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="data", type="date", nullable=true)
+     */
+    private $data;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="link", type="text", nullable=true)
+     */
+    private $link;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="file_allegati", type="text", nullable=true)
+     */
+    private $fileAllegati;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="ordine", type="integer", nullable=true)
+     */
+    private $ordine;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="contatore", type="integer", nullable=true)
+     */
+    private $contatore;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="linkGenerato", type="string", length=255, nullable=true)
+     */
+    private $linkgenerato;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="mipiaci", type="integer", nullable=false)
+     */
+    private $mipiaci;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="eStataPiuCliccata", type="string", length=50, nullable=false)
+     */
+    private $estatapiucliccata;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="commenti_abilitati", type="string", length=50, nullable=true)
+     */
+    private $commentiAbilitati;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+
+}

@@ -1,0 +1,42 @@
+LLPP\MyTestBundle\Entity\PhpbbVoteDesc:
+    type: entity
+    table: phpbb_vote_desc
+    indexes:
+        topic_id:
+            columns:
+                - topic_id
+    id:
+        voteId:
+            type: integer
+            nullable: false
+            unsigned: true
+            id: true
+            column: vote_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        topicId:
+            type: integer
+            nullable: false
+            unsigned: true
+            default: '0'
+            column: topic_id
+        voteText:
+            type: text
+            nullable: false
+            length: 65535
+            fixed: false
+            column: vote_text
+        voteStart:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: vote_start
+        voteLength:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: vote_length
+    lifecycleCallbacks: {  }

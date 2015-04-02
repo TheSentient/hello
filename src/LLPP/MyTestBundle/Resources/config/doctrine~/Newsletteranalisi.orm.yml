@@ -1,0 +1,32 @@
+LLPP\MyTestBundle\Entity\Newsletteranalisi:
+    type: entity
+    table: newsletterAnalisi
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        n:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: N
+        data:
+            type: date
+            nullable: true
+        visualizzata:
+            type: integer
+            nullable: true
+            unsigned: false
+        ip:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: IP
+    lifecycleCallbacks: {  }

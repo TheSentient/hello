@@ -1,0 +1,29 @@
+book:
+    path: /
+    defaults: {_controller: "GrafillManagerBundle:Libri:index" }
+
+book_mostra:
+    pattern: /mostra/{id}
+    defaults: {_controller: "GrafillManagerBundle:Libri:mostra" }
+
+book_nuovo:
+    path: /nuovo
+    defaults: {_controller: "GrafillManagerBundle:Libri:nuovo" }
+
+book_crea:
+    path: /crea
+    defaults: {_controller: "GrafillManagerBundle:Libri:crea" }
+
+book_modifica:
+    path: /modifica/{id}
+    defaults: {_controller: "GrafillManagerBundle:Libri:modifica" }
+
+book_aggiorna:
+    path: /aggiorna/{id}
+    defaults: {_controller: "GrafillManagerBundle:Libri:aggiorna" }
+    requirements: { _method: post|put }
+
+book_cancella:
+    path: /cancella/{id}
+    defaults: {_controller: "GrafillManagerBundle:Libri:cancella" }
+    requirements: { _method: post|delete }

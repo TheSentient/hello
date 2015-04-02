@@ -1,0 +1,87 @@
+LLPP\MyTestBundle\Entity\Llpprichiesteomaggio:
+    type: entity
+    table: llppRichiesteOmaggio
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        nome:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+        cognome:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+        professione:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+        email:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+        codicefiscale:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: codiceFiscale
+        partitaiva:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            column: partitaIVA
+        indirizzo:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        ncivico:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: nCivico
+        citta:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        provincia:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+        cap:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+        telefono:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+        cellulare:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+        fax:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+    lifecycleCallbacks: {  }

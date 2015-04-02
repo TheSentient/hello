@@ -1,0 +1,34 @@
+LLPP\MyTestBundle\Entity\Pietro2:
+    type: entity
+    table: pietro2
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        tipo:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: Tipo
+        note:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: Note
+        codiceTributo:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: codice_tributo
+        data:
+            type: date
+            nullable: true
+    lifecycleCallbacks: {  }

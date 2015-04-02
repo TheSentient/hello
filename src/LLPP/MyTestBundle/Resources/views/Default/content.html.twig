@@ -1,0 +1,9 @@
+<table border='1' cellspacing='0' width="100%" height="2000">
+  {% for product in products|slice(0,50) %}
+  <tr>
+  	<td>{{product.id}}</td>
+  	<td>{{product.nomeProdotto}}</td>
+  	<td>{{product.descrizioneBreve}}</td>
+  </tr>
+  {% endfor %}
+</table>

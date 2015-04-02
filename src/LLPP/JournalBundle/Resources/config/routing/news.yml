@@ -1,0 +1,34 @@
+news:
+    path:     /
+    defaults: { _controller: "LLPPJournalBundle:News:index" }
+
+news_ajax:
+    path:     /
+    defaults: { _controller: "LLPPJournalBundle:News:indexAjax" }
+    
+news_show:
+    path:     /{id}/show
+    defaults: { _controller: "LLPPJournalBundle:News:show" }
+
+news_new:
+    path:     /new
+    defaults: { _controller: "LLPPJournalBundle:News:new" }
+
+news_create:
+    path:     /create
+    defaults: { _controller: "LLPPJournalBundle:News:create" }
+    requirements: { _method: post }
+
+news_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "LLPPJournalBundle:News:edit" }
+
+news_update:
+    path:     /{id}/update
+    defaults: { _controller: "LLPPJournalBundle:News:update" }
+    requirements: { _method: post|put }
+
+news_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "LLPPJournalBundle:News:delete" }
+    requirements: { _method: post|delete }

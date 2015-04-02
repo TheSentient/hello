@@ -1,0 +1,34 @@
+fileallegato:
+    path:     /
+    defaults: { _controller: "LLPPJournalBundle:FileAllegato:index" }
+
+fileallegato_ajax:
+    path:     /
+    defaults: { _controller: "LLPPJournalBundle:FileAllegato:indexAjax" }
+
+fileallegato_show:
+    path:     /{id}/show
+    defaults: { _controller: "LLPPJournalBundle:FileAllegato:show" }
+
+fileallegato_new:
+    path:     /new
+    defaults: { _controller: "LLPPJournalBundle:FileAllegato:new" }
+
+fileallegato_create:
+    path:     /create
+    defaults: { _controller: "LLPPJournalBundle:FileAllegato:create" }
+    requirements: { _method: post }
+
+fileallegato_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "LLPPJournalBundle:FileAllegato:edit" }
+
+fileallegato_update:
+    path:     /{id}/update
+    defaults: { _controller: "LLPPJournalBundle:FileAllegato:update" }
+    requirements: { _method: post|put }
+
+fileallegato_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "LLPPJournalBundle:FileAllegato:delete" }
+    requirements: { _method: post|delete }

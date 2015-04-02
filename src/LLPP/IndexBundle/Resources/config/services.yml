@@ -1,0 +1,6 @@
+#services: 
+  #  pjs.app_bundle.menu.backend_listener:
+    #   class: LLPP\IndexBundle\EventsListener\BackendMenuEventsListener
+    #   arguments: ['@event_dispatcher','@security.context']
+     #  tags:
+       #    - { name: kernel.event_listener, event: alangemar.admin.menu.configure_root, method: onMenuConfigureRoot }

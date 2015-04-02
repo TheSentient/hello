@@ -1,0 +1,28 @@
+LLPP\MyTestBundle\Entity\PhpbbPrivmsgsText:
+    type: entity
+    table: phpbb_privmsgs_text
+    id:
+        privmsgsTextId:
+            type: integer
+            nullable: false
+            unsigned: true
+            default: '0'
+            id: true
+            column: privmsgs_text_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        privmsgsBbcodeUid:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: '0'
+            column: privmsgs_bbcode_uid
+        privmsgsText:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: privmsgs_text
+    lifecycleCallbacks: {  }

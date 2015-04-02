@@ -1,0 +1,39 @@
+LLPP\MyTestBundle\Entity\Bannervideo:
+    type: entity
+    table: bannerVideo
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        video:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        link:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        testo:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        azienda:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        codiceazienda:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: codiceAzienda
+    lifecycleCallbacks: {  }

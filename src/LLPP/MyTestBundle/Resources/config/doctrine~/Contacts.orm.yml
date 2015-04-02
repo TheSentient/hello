@@ -1,0 +1,63 @@
+LLPP\MyTestBundle\Entity\Contacts:
+    type: entity
+    table: contacts
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        nominativo:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        indirizzo:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        cap:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        citta:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        regione:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        telefono:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        fax:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        mail:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        url:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        cell:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+    lifecycleCallbacks: {  }

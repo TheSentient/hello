@@ -1,0 +1,69 @@
+LLPP\MyTestBundle\Entity\NovitaHomeFlash:
+    type: entity
+    table: novita_home_flash
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        titolo:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        categoria:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+        testo:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        data:
+            type: date
+            nullable: true
+        link:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        fileAllegati:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: file_allegati
+        ordine:
+            type: integer
+            nullable: true
+            unsigned: false
+        contatore:
+            type: integer
+            nullable: true
+            unsigned: false
+            default: '1'
+        linkgenerato:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: linkGenerato
+        mipiaci:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+        estatapiucliccata:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: NO
+            column: eStataPiuCliccata
+    lifecycleCallbacks: {  }

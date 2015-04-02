@@ -1,0 +1,56 @@
+LLPP\MyTestBundle\Entity\ScadenzarioFiscale:
+    type: entity
+    table: scadenzario_fiscale
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        datas:
+            type: date
+            nullable: true
+        cosa:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        note:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        codice:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        tipologietributi:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: tipologieTributi
+        categoriecontribuenti:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: categorieContribuenti
+        evidenza:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            default: NO
+        dataChiave:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: NO
+            column: data_chiave
+    lifecycleCallbacks: {  }

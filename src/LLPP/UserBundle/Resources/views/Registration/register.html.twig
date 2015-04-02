@@ -1,0 +1,5 @@
+{% extends frag == 'true' ? 'LLPPUserBundle::layout_frag.html.twig' : 'LLPPUserBundle::layout.html.twig' %}
+
+{% block fos_user_content %}
+{% include "LLPPUserBundle:Registration:register_content.html.twig" %}
+{% endblock fos_user_content %}

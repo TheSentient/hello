@@ -1,0 +1,41 @@
+LLPP\MyTestBundle\Entity\ContenutiModuloAziende:
+    type: entity
+    table: contenuti_modulo_aziende
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        idAzienda:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: id_azienda
+        nomeAzienda:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+            column: nome_azienda
+        tipo:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            default: CODICE
+        contenuto:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        testoRisposta:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: testo_risposta
+    lifecycleCallbacks: {  }

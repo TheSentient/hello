@@ -1,0 +1,45 @@
+LLPP\MyTestBundle\Entity\NumeriLlpp:
+    type: entity
+    table: numeri_llpp
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        anno:
+            type: integer
+            nullable: true
+            unsigned: false
+        numero:
+            type: string
+            nullable: true
+            length: 120
+            fixed: false
+        cartella:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+        linkSommario:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+            column: link_sommario
+        linkNumero:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+            column: link_numero
+        linkEpub:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: link_epub
+    lifecycleCallbacks: {  }

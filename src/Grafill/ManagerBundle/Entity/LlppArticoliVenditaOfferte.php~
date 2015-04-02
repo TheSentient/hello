@@ -1,0 +1,67 @@
+<?php
+
+namespace Grafill\ManagerBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * LlppArticoliVenditaOfferte
+ *
+ * @ORM\Table(name="llpp_articoli_vendita_offerte")
+ * @ORM\Entity
+ */
+class LlppArticoliVenditaOfferte
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_articolo_vendita", type="integer", nullable=false)
+     */
+    private $idArticoloVendita;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="offertai", type="date", nullable=false)
+     */
+    private $offertai;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="offertaf", type="date", nullable=false)
+     */
+    private $offertaf;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="sconto", type="integer", nullable=false)
+     */
+    private $sconto;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="spedizione", type="string", length=50, nullable=false)
+     */
+    private $spedizione;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_origine", type="integer", nullable=false)
+     */
+    private $idOrigine;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+
+}

@@ -1,0 +1,53 @@
+<?php
+
+namespace Grafill\ManagerBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Varianti
+ *
+ * @ORM\Table(name="varianti", indexes={@ORM\Index(name="id_articolo_vendita_id_tipo", columns={"id_articolo_vendita", "id_tipo"})})
+ * @ORM\Entity
+ */
+class Varianti
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_articolo_vendita", type="integer", nullable=true)
+     */
+    private $idArticoloVendita;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_tipo", type="integer", nullable=true)
+     */
+    private $idTipo;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="isbn", type="string", length=100, nullable=true)
+     */
+    private $isbn;
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="prezzosuppl", type="float", precision=10, scale=0, nullable=true)
+     */
+    private $prezzosuppl;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+
+}

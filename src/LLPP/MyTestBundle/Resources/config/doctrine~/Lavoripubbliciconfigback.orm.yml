@@ -1,0 +1,24 @@
+LLPP\MyTestBundle\Entity\Lavoripubbliciconfigback:
+    type: entity
+    table: lavoriPubbliciConfigBACK
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        var:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        val:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+    lifecycleCallbacks: {  }

@@ -1,0 +1,31 @@
+LLPP\MyTestBundle\Entity\Statistics:
+    type: entity
+    table: statistics
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        from:
+            type: text
+            nullable: true
+            length: 16777215
+            fixed: false
+        to:
+            type: text
+            nullable: true
+            length: 16777215
+            fixed: false
+        when:
+            type: date
+            nullable: true
+        how:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+    lifecycleCallbacks: {  }

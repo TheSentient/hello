@@ -1,0 +1,44 @@
+LLPP\JournalBundle\Entity\Normativa:
+    type: entity
+    table: null
+    repositoryClass: LLPP\JournalBundle\Entity\NormativaRepository
+    manyToOne:
+        categoria:
+            targetEntity: Categoria
+            inversedBy: normativa
+            joinColumn:
+                name: categoria_id
+                referencedColumnName: id
+    manyToMany:
+        news:
+            targetEntity: News
+            mappedBy: normative
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        titolo:
+            type: string
+            length: 255
+        oggetto:
+            type: string
+            length: 255
+        dataNormativa:
+            type: date
+            column: data_normativa
+        gazzettaUfficiale:
+            type: string
+            length: 255
+            column: gazzetta_ufficiale
+        contenuto:
+            type: text
+        permalink:
+            type: string
+            length: 255
+        dataInserimento:
+            type: datetime
+            column: data_inserimento
+    lifecycleCallbacks: {  }

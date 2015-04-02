@@ -1,0 +1,11 @@
+#grafill_manager:
+ #   resource: "@GrafillManagerBundle/Resources/config/routing.yml"
+ #   prefix:   /libri
+
+llpp_pagina_principale:
+    resource: "@LLPPIndexBundle/Resources/config/routing.yml"
+    prefix: /giornale
+
+#grafill_hello_world:
+  #  resource: "@GrafillHelloWorldBundle/Resources/config/routing.yml"
+   # prefix:   /

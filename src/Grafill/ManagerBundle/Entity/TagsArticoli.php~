@@ -1,0 +1,39 @@
+<?php
+
+namespace Grafill\ManagerBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * TagsArticoli
+ *
+ * @ORM\Table(name="tags_articoli")
+ * @ORM\Entity
+ */
+class TagsArticoli
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_articolo", type="integer", nullable=false)
+     */
+    private $idArticolo;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_tags", type="integer", nullable=false)
+     */
+    private $idTags;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+
+}

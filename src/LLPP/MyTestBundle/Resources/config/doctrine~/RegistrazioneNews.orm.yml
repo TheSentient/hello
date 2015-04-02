@@ -1,0 +1,62 @@
+LLPP\MyTestBundle\Entity\RegistrazioneNews:
+    type: entity
+    table: registrazione_news
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        professione:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+        nome:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+        cognome:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+        email:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+        oggi:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            default: ''
+        ts:
+            type: integer
+            nullable: true
+            unsigned: false
+            default: '0'
+        vero:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: NO
+        trattDati:
+            type: string
+            nullable: false
+            length: 2
+            fixed: true
+            default: si
+            column: tratt_dati
+    lifecycleCallbacks: {  }

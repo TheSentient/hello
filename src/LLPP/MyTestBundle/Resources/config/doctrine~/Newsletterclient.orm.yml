@@ -1,0 +1,31 @@
+LLPP\MyTestBundle\Entity\Newsletterclient:
+    type: entity
+    table: newsletterClient
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        n:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: N
+        data:
+            type: date
+            nullable: true
+        visualizzata:
+            type: integer
+            nullable: true
+            unsigned: false
+        ip:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: IP
+    lifecycleCallbacks: {  }

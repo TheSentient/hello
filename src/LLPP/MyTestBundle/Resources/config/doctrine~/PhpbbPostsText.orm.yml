@@ -1,0 +1,34 @@
+LLPP\MyTestBundle\Entity\PhpbbPostsText:
+    type: entity
+    table: phpbb_posts_text
+    id:
+        postId:
+            type: integer
+            nullable: false
+            unsigned: true
+            default: '0'
+            id: true
+            column: post_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        bbcodeUid:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            default: ''
+            column: bbcode_uid
+        postSubject:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: post_subject
+        postText:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: post_text
+    lifecycleCallbacks: {  }

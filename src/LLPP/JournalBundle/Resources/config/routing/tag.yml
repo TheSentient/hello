@@ -1,0 +1,34 @@
+tag:
+    path:     /
+    defaults: { _controller: "LLPPJournalBundle:Tag:index" }
+
+tag_ajax:
+    path:     /
+    defaults: { _controller: "LLPPJournalBundle:Tag:indexAjax" }
+
+tag_show:
+    path:     /{id}/show
+    defaults: { _controller: "LLPPJournalBundle:Tag:show" }
+
+tag_new:
+    path:     /new
+    defaults: { _controller: "LLPPJournalBundle:Tag:new" }
+
+tag_create:
+    path:     /create
+    defaults: { _controller: "LLPPJournalBundle:Tag:create" }
+    requirements: { _method: post }
+
+tag_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "LLPPJournalBundle:Tag:edit" }
+
+tag_update:
+    path:     /{id}/update
+    defaults: { _controller: "LLPPJournalBundle:Tag:update" }
+    requirements: { _method: post|put }
+
+tag_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "LLPPJournalBundle:Tag:delete" }
+    requirements: { _method: post|delete }

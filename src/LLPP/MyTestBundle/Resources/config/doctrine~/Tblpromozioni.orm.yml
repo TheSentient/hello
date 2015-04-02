@@ -1,0 +1,68 @@
+LLPP\MyTestBundle\Entity\Tblpromozioni:
+    type: entity
+    table: tblPromozioni
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        nomepromozione:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: nomePromozione
+        descrizione:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        template:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        img:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+        tipo:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+        valida:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: TUTTI
+        editori:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        importo:
+            type: float
+            nullable: true
+            precision: 15
+            scale: 2
+        sconto:
+            type: integer
+            nullable: true
+            unsigned: false
+        datainizio:
+            type: date
+            nullable: true
+            column: dataInizio
+        datafine:
+            type: date
+            nullable: true
+            column: dataFine
+    lifecycleCallbacks: {  }

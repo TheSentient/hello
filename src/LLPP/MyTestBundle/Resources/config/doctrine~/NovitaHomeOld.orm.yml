@@ -1,0 +1,90 @@
+LLPP\MyTestBundle\Entity\NovitaHomeOld:
+    type: entity
+    table: novita_home_old
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        titolo:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        sottotitolo:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        categoria:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+        tipoNovita:
+            type: string
+            nullable: true
+            length: 120
+            fixed: false
+            column: tipo_novita
+        titoloNovita:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: titolo_novita
+        gazzettaUfficiale:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+            column: gazzetta_ufficiale
+        imagine:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+        testo:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        data:
+            type: date
+            nullable: true
+        link:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        fileAllegati:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: file_allegati
+        ordine:
+            type: integer
+            nullable: true
+            unsigned: false
+        new:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            default: NO
+        sessione:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+        contatore:
+            type: integer
+            nullable: true
+            unsigned: false
+            default: '1'
+    lifecycleCallbacks: {  }

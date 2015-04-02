@@ -1,0 +1,3 @@
+vaffanculo:
+    path:     /
+    defaults: { _controller: LLPPIndexBundle:Home:index }

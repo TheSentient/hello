@@ -1,0 +1,50 @@
+LLPP\MyTestBundle\Entity\Segnalazioninewsletter:
+    type: entity
+    table: segnalazioniNewsletter
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        nomemittente:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: nomeMittente
+        emailmittente:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: emailMittente
+        nomedestinatario:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: nomeDestinatario
+        emaildestinatario:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: emailDestinatario
+        testoaggiuntivo:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: testoAggiuntivo
+        linksegnalato:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: linkSegnalato
+    lifecycleCallbacks: {  }

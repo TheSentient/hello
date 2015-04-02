@@ -1,0 +1,34 @@
+hyperlinkpagina:
+    path:     /
+    defaults: { _controller: "LLPPJournalBundle:HyperlinkPagina:index" }
+
+hyperlinkpagina_ajax:
+    path:     /
+    defaults: { _controller: "LLPPJournalBundle:HyperlinkPagina:indexAjax" }
+
+hyperlinkpagina_show:
+    path:     /{id}/show
+    defaults: { _controller: "LLPPJournalBundle:HyperlinkPagina:show" }
+
+hyperlinkpagina_new:
+    path:     /new
+    defaults: { _controller: "LLPPJournalBundle:HyperlinkPagina:new" }
+
+hyperlinkpagina_create:
+    path:     /create
+    defaults: { _controller: "LLPPJournalBundle:HyperlinkPagina:create" }
+    requirements: { _method: post }
+
+hyperlinkpagina_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "LLPPJournalBundle:HyperlinkPagina:edit" }
+
+hyperlinkpagina_update:
+    path:     /{id}/update
+    defaults: { _controller: "LLPPJournalBundle:HyperlinkPagina:update" }
+    requirements: { _method: post|put }
+
+hyperlinkpagina_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "LLPPJournalBundle:HyperlinkPagina:delete" }
+    requirements: { _method: post|delete }

@@ -1,0 +1,44 @@
+LLPP\MyTestBundle\Entity\Abbonamentopacchetti:
+    type: entity
+    table: abbonamentoPacchetti
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        codicepacchetto:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: codicePacchetto
+        codiciprezzi:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: codiciPrezzi
+        nomepacchetto:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: nomePacchetto
+        prezzototale:
+            type: float
+            nullable: true
+            precision: 15
+            scale: 2
+            column: prezzoTotale
+        codiceabbonamento:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: codiceAbbonamento
+    lifecycleCallbacks: {  }

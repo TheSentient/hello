@@ -1,0 +1,23 @@
+LLPP\MyTestBundle\Entity\Lngruppicategorie:
+    type: entity
+    table: lnGruppiCategorie
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        categoria:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+        ordine:
+            type: integer
+            nullable: true
+            unsigned: false
+    lifecycleCallbacks: {  }

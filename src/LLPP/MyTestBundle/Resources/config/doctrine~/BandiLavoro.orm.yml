@@ -1,0 +1,63 @@
+LLPP\MyTestBundle\Entity\BandiLavoro:
+    type: entity
+    table: bandi_lavoro
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        ente:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+        indirizzo:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+        prov:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+        regione:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+        oggetto:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        categoria:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+        impopere:
+            type: float
+            nullable: true
+            precision: 15
+            scale: 3
+        dataScadenza:
+            type: date
+            nullable: true
+            column: data_scadenza
+        allegati:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        evidenza:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+            default: NO
+    lifecycleCallbacks: {  }

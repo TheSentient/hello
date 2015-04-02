@@ -1,0 +1,34 @@
+corsoformazione:
+    path:     /
+    defaults: { _controller: "LLPPJournalBundle:CorsoFormazione:index" }
+
+corsoformazione_ajax:
+    path:     /
+    defaults: { _controller: "LLPPJournalBundle:CorsoFormazione:indexAjax" }
+
+corsoformazione_show:
+    path:     /{id}/show
+    defaults: { _controller: "LLPPJournalBundle:CorsoFormazione:show" }
+
+corsoformazione_new:
+    path:     /new
+    defaults: { _controller: "LLPPJournalBundle:CorsoFormazione:new" }
+
+corsoformazione_create:
+    path:     /create
+    defaults: { _controller: "LLPPJournalBundle:CorsoFormazione:create" }
+    requirements: { _method: post }
+
+corsoformazione_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "LLPPJournalBundle:CorsoFormazione:edit" }
+
+corsoformazione_update:
+    path:     /{id}/update
+    defaults: { _controller: "LLPPJournalBundle:CorsoFormazione:update" }
+    requirements: { _method: post|put }
+
+corsoformazione_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "LLPPJournalBundle:CorsoFormazione:delete" }
+    requirements: { _method: post|delete }

@@ -1,0 +1,38 @@
+LLPP\MyTestBundle\Entity\ScadenzarioFiscaleReminder:
+    type: entity
+    table: scadenzario_fiscale_reminder
+    id:
+        reminderId:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: reminder_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        utenteId:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: utente_id
+        scadenzaId:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: scadenza_id
+        reminderDataScadenza:
+            type: date
+            nullable: false
+            column: reminder_data_scadenza
+        reminderData:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: reminder_data
+        reminderSent:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: reminder_sent
+    lifecycleCallbacks: {  }

@@ -1,0 +1,35 @@
+llpp_journal_corsoformazione:
+    resource: "@LLPPJournalBundle/Resources/config/routing/corsoformazione.yml"
+    prefix:   /corsoformazione
+
+llpp_journal_hyperlinkpagina:
+    resource: "@LLPPJournalBundle/Resources/config/routing/hyperlinkpagina.yml"
+    prefix:   /hyperlinkpagina
+
+llpp_journal_linkcorrelato:
+    resource: "@LLPPJournalBundle/Resources/config/routing/linkcorrelato.yml"
+    prefix:   /linkcorrelato
+
+llpp_journal_fileallegato:
+    resource: "@LLPPJournalBundle/Resources/config/routing/fileallegato.yml"
+    prefix:   /fileallegato
+
+llpp_journal_tag:
+    resource: "@LLPPJournalBundle/Resources/config/routing/tag.yml"
+    prefix:   /tag
+
+llpp_journal_categoria:
+    resource: "@LLPPJournalBundle/Resources/config/routing/categoria.yml"
+    prefix:   /categoria
+
+llpp_journal_normativa:
+    resource: "@LLPPJournalBundle/Resources/config/routing/normativa.yml"
+    prefix:   /normativa
+
+llpp_journal_news:
+    resource: "@LLPPJournalBundle/Resources/config/routing/news.yml"
+    prefix:   /backend/news
+
+#llpp_journal_news_form:
+#    path:     /news/form
+#    defaults: { _controller: LLPPJournalBundle:Default:getForm }

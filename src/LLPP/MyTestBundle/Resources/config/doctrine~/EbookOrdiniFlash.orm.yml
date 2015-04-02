@@ -1,0 +1,60 @@
+LLPP\MyTestBundle\Entity\EbookOrdiniFlash:
+    type: entity
+    table: ebook_ordini_flash
+    uniqueConstraints:
+        numero:
+            columns:
+                - numero
+                - isbn
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        numero:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        isbn:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+        userId:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: user_id
+        totale:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+        tipoPagamento:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: tipo_pagamento
+        processato:
+            type: boolean
+            nullable: false
+            default: '0'
+        pagato:
+            type: boolean
+            nullable: false
+            default: '0'
+        ts:
+            type: datetime
+            nullable: false
+            default: '0000-00-00 00:00:00'
+        pagamentoEffettuato:
+            type: datetime
+            nullable: true
+            column: pagamento_effettuato
+    lifecycleCallbacks: {  }

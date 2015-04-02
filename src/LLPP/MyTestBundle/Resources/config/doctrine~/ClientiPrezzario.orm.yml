@@ -1,0 +1,123 @@
+LLPP\MyTestBundle\Entity\ClientiPrezzario:
+    type: entity
+    table: clienti_prezzario
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        cognome:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            column: Cognome
+        nome:
+            type: string
+            nullable: true
+            length: 110
+            fixed: false
+            column: Nome
+        indirizzo:
+            type: string
+            nullable: true
+            length: 110
+            fixed: false
+            column: Indirizzo
+        cap:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: Cap
+        citta:
+            type: string
+            nullable: true
+            length: 110
+            fixed: false
+            column: Citta
+        regione:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: Regione
+        telefono:
+            type: string
+            nullable: true
+            length: 110
+            fixed: false
+            column: Telefono
+        iva:
+            type: string
+            nullable: true
+            length: 110
+            fixed: false
+            column: IVA
+        email:
+            type: string
+            nullable: true
+            length: 110
+            fixed: false
+            column: Email
+        www:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        descrizione1:
+            type: string
+            nullable: true
+            length: 110
+            fixed: false
+            column: descrizione_1
+        descrizione2:
+            type: string
+            nullable: true
+            length: 110
+            fixed: false
+            column: descrizione_2
+        descrizione3:
+            type: string
+            nullable: true
+            length: 110
+            fixed: false
+            column: descrizione_3
+        idClienti:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: id_clienti
+        professione:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: Professione
+        descrizione:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        ragione:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: Ragione
+        fax:
+            type: string
+            nullable: true
+            length: 110
+            fixed: false
+        cf:
+            type: string
+            nullable: true
+            length: 16
+            fixed: false
+    lifecycleCallbacks: {  }

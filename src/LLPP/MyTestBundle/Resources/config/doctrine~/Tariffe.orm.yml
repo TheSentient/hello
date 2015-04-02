@@ -1,0 +1,109 @@
+LLPP\MyTestBundle\Entity\Tariffe:
+    type: entity
+    table: tariffe
+    indexes:
+        author:
+            columns:
+                - author
+        userid:
+            columns:
+                - userid
+        datestamp:
+            columns:
+                - datestamp
+        subject:
+            columns:
+                - subject
+        thread:
+            columns:
+                - thread
+        parent:
+            columns:
+                - parent
+        approved:
+            columns:
+                - approved
+        msgid:
+            columns:
+                - msgid
+        modifystamp:
+            columns:
+                - modifystamp
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: true
+            default: '0'
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        datestamp:
+            type: datetime
+            nullable: false
+            default: '0000-00-00 00:00:00'
+        thread:
+            type: integer
+            nullable: false
+            unsigned: true
+            default: '0'
+        parent:
+            type: integer
+            nullable: false
+            unsigned: true
+            default: '0'
+        author:
+            type: string
+            nullable: false
+            length: 37
+            fixed: true
+            default: ''
+        subject:
+            type: string
+            nullable: false
+            length: 255
+            fixed: true
+            default: ''
+        email:
+            type: string
+            nullable: false
+            length: 200
+            fixed: true
+            default: ''
+        host:
+            type: string
+            nullable: false
+            length: 50
+            fixed: true
+            default: ''
+        emailReply:
+            type: string
+            nullable: false
+            length: 1
+            fixed: true
+            default: N
+            column: email_reply
+        approved:
+            type: string
+            nullable: false
+            length: 1
+            fixed: true
+            default: N
+        msgid:
+            type: string
+            nullable: false
+            length: 100
+            fixed: true
+            default: ''
+        modifystamp:
+            type: integer
+            nullable: false
+            unsigned: true
+            default: '0'
+        userid:
+            type: integer
+            nullable: false
+            unsigned: true
+            default: '0'
+    lifecycleCallbacks: {  }

@@ -1,0 +1,34 @@
+LLPP\MyTestBundle\Entity\Tblbuoniscontoelenco:
+    type: entity
+    table: tblBuoniScontoElenco
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idpromozione:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idPromozione
+        codicebuono:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: codiceBuono
+        idcliente:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idCliente
+        datascadenza:
+            type: date
+            nullable: true
+            column: dataScadenza
+    lifecycleCallbacks: {  }

@@ -1,0 +1,29 @@
+LLPP\MyTestBundle\Entity\NewsElencotbl2:
+    type: entity
+    table: news_elencotbl2
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        tabella:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+        campi:
+            type: string
+            nullable: true
+            length: 150
+            fixed: false
+        campoRegione:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            column: campo_regione
+    lifecycleCallbacks: {  }

@@ -1,0 +1,279 @@
+LLPP\MyTestBundle\Entity\PhpbbUsers:
+    type: entity
+    table: phpbb_users
+    indexes:
+        user_session_time:
+            columns:
+                - user_session_time
+    id:
+        userId:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            id: true
+            column: user_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        userActive:
+            type: boolean
+            nullable: true
+            default: '1'
+            column: user_active
+        username:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            default: ''
+        userPassword:
+            type: string
+            nullable: false
+            length: 32
+            fixed: false
+            default: ''
+            column: user_password
+        userSessionTime:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: user_session_time
+        userSessionPage:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: user_session_page
+        userLastvisit:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: user_lastvisit
+        userRegdate:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: user_regdate
+        userLevel:
+            type: boolean
+            nullable: true
+            default: '0'
+            column: user_level
+        userPosts:
+            type: integer
+            nullable: false
+            unsigned: true
+            default: '0'
+            column: user_posts
+        userTimezone:
+            type: decimal
+            nullable: false
+            precision: 5
+            scale: 2
+            default: '0.00'
+            column: user_timezone
+        userStyle:
+            type: boolean
+            nullable: true
+            column: user_style
+        userLang:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: user_lang
+        userDateformat:
+            type: string
+            nullable: false
+            length: 14
+            fixed: false
+            default: 'd M Y H:i'
+            column: user_dateformat
+        userNewPrivmsg:
+            type: smallint
+            nullable: false
+            unsigned: true
+            default: '0'
+            column: user_new_privmsg
+        userUnreadPrivmsg:
+            type: smallint
+            nullable: false
+            unsigned: true
+            default: '0'
+            column: user_unread_privmsg
+        userLastPrivmsg:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: user_last_privmsg
+        userEmailtime:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: user_emailtime
+        userViewemail:
+            type: boolean
+            nullable: true
+            column: user_viewemail
+        userAttachsig:
+            type: boolean
+            nullable: true
+            column: user_attachsig
+        userAllowhtml:
+            type: boolean
+            nullable: true
+            default: '1'
+            column: user_allowhtml
+        userAllowbbcode:
+            type: boolean
+            nullable: true
+            default: '1'
+            column: user_allowbbcode
+        userAllowsmile:
+            type: boolean
+            nullable: true
+            default: '1'
+            column: user_allowsmile
+        userAllowavatar:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: user_allowavatar
+        userAllowPm:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: user_allow_pm
+        userAllowViewonline:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: user_allow_viewonline
+        userNotify:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: user_notify
+        userNotifyPm:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: user_notify_pm
+        userPopupPm:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: user_popup_pm
+        userRank:
+            type: integer
+            nullable: true
+            unsigned: false
+            default: '0'
+            column: user_rank
+        userAvatar:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            column: user_avatar
+        userAvatarType:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: user_avatar_type
+        userEmail:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: user_email
+        userIcq:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+            column: user_icq
+        userWebsite:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            column: user_website
+        userFrom:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            column: user_from
+        userSig:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: user_sig
+        userSigBbcodeUid:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            column: user_sig_bbcode_uid
+        userAim:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: user_aim
+        userYim:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: user_yim
+        userMsnm:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: user_msnm
+        userOcc:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            column: user_occ
+        userInterests:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: user_interests
+        userActkey:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: user_actkey
+        userNewpasswd:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: user_newpasswd
+        userLoginTries:
+            type: smallint
+            nullable: false
+            unsigned: true
+            default: '0'
+            column: user_login_tries
+        userLastLoginTry:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: user_last_login_try
+    lifecycleCallbacks: {  }

@@ -1,0 +1,26 @@
+LLPP\JournalBundle\Entity\HyperlinkPagina:
+    type: entity
+    table: null
+    repositoryClass: LLPP\JournalBundle\Entity\HyperlinkPaginaRepository
+    inheritanceType: SINGLE_TABLE
+    discriminatorColumn:
+        name: discr
+        type: string
+    discriminatorMap:
+        hyperlink_generico: HyperlinkPagina
+        link_correlato: LinkCorrelato
+        file_allegato: FileAllegato
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nome:
+            type: string
+            length: 255
+        url:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

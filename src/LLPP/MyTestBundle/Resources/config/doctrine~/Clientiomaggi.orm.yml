@@ -1,0 +1,122 @@
+LLPP\MyTestBundle\Entity\Clientiomaggi:
+    type: entity
+    table: clientiOmaggi
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        cognome:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Cognome
+        nome:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Nome
+        professione:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Professione
+        societa:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Societa
+        codiceFiscale:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: codice_fiscale
+        partitaIva:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            column: partita_iva
+        indirizzo:
+            type: string
+            nullable: false
+            length: 70
+            fixed: false
+            default: ''
+            column: Indirizzo
+        cap:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            default: '0'
+            column: Cap
+        citta:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Citta
+        provincia:
+            type: string
+            nullable: false
+            length: 4
+            fixed: false
+            default: ''
+            column: Provincia
+        regione:
+            type: string
+            nullable: true
+            length: 120
+            fixed: false
+            column: Regione
+        telefono:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Telefono
+        fax:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            default: ''
+            column: Fax
+        email:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            default: ''
+            column: Email
+        trattDati:
+            type: string
+            nullable: false
+            length: null
+            fixed: false
+            default: SI
+            column: Tratt_dati
+        omaggio:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: Omaggio
+    lifecycleCallbacks: {  }

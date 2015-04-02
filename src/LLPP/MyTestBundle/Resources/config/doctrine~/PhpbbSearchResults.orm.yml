@@ -1,0 +1,38 @@
+LLPP\MyTestBundle\Entity\PhpbbSearchResults:
+    type: entity
+    table: phpbb_search_results
+    indexes:
+        session_id:
+            columns:
+                - session_id
+    id:
+        searchId:
+            type: integer
+            nullable: false
+            unsigned: true
+            default: '0'
+            id: true
+            column: search_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        sessionId:
+            type: string
+            nullable: false
+            length: 32
+            fixed: false
+            default: ''
+            column: session_id
+        searchArray:
+            type: text
+            nullable: false
+            length: 65535
+            fixed: false
+            column: search_array
+        searchTime:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: search_time
+    lifecycleCallbacks: {  }

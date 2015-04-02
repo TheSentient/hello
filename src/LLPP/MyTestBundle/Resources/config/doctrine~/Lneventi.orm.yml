@@ -1,0 +1,29 @@
+LLPP\MyTestBundle\Entity\Lneventi:
+    type: entity
+    table: lnEventi
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idCliente:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: id_cliente
+        idIdentificativo:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: id_identificativo
+        tipo:
+            type: string
+            nullable: true
+            length: null
+            fixed: false
+    lifecycleCallbacks: {  }

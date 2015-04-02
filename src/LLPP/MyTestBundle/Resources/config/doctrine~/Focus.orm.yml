@@ -1,0 +1,44 @@
+LLPP\MyTestBundle\Entity\Focus:
+    type: entity
+    table: focus
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        nome:
+            type: text
+            nullable: false
+            length: 65535
+            fixed: false
+        link:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        img:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        categoria:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+        banner:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        testo:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+    lifecycleCallbacks: {  }

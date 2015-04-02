@@ -1,0 +1,39 @@
+<?php
+
+namespace Grafill\ManagerBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * LlppArtVendCat
+ *
+ * @ORM\Table(name="llpp_art_vend_cat", indexes={@ORM\Index(name="id_articoli_vendita_id_categoria", columns={"id_articoli_vendita", "id_categoria"})})
+ * @ORM\Entity
+ */
+class LlppArtVendCat
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_articoli_vendita", type="integer", nullable=true)
+     */
+    private $idArticoliVendita;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_categoria", type="integer", nullable=true)
+     */
+    private $idCategoria;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+
+}

@@ -1,0 +1,130 @@
+<?php
+
+namespace Grafill\ManagerBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Ordini
+ *
+ * @ORM\Table(name="ordini")
+ * @ORM\Entity
+ */
+class Ordini
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="data", type="string", length=15, nullable=true)
+     */
+    private $data;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="ts", type="datetime", nullable=false)
+     */
+    private $ts;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="cliente", type="string", length=200, nullable=true)
+     */
+    private $cliente;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_cliente", type="integer", nullable=true)
+     */
+    private $idCliente;
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="totale_ordine", type="float", precision=15, scale=2, nullable=true)
+     */
+    private $totaleOrdine;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="tipo_spedizione", type="string", length=60, nullable=true)
+     */
+    private $tipoSpedizione;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="tipo_pagamento", type="string", length=60, nullable=true)
+     */
+    private $tipoPagamento;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="stato", type="string", length=50, nullable=true)
+     */
+    private $stato;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="sessione", type="string", length=200, nullable=true)
+     */
+    private $sessione;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="num_ordine", type="string", length=60, nullable=true)
+     */
+    private $numOrdine;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="data_sped", type="date", nullable=true)
+     */
+    private $dataSped;
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="spese_spedizione", type="float", precision=10, scale=0, nullable=true)
+     */
+    private $speseSpedizione;
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="spese_pagamento", type="float", precision=10, scale=0, nullable=false)
+     */
+    private $spesePagamento;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="pagamento_effettuato", type="datetime", nullable=true)
+     */
+    private $pagamentoEffettuato;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="ebook_flash_order", type="string", length=255, nullable=true)
+     */
+    private $ebookFlashOrder;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+
+}

@@ -1,0 +1,23 @@
+LLPP\JournalBundle\Entity\Tag:
+    type: entity
+    table: null
+    repositoryClass: LLPP\JournalBundle\Entity\TagRepository
+    manyToMany:
+        news:
+            targetEntity: News
+            mappedBy: tags
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nome:
+            type: string
+            length: 255
+        descrizione:
+            type: string
+            length: 255
+            nullable: true
+    lifecycleCallbacks: {  }

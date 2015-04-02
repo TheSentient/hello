@@ -1,0 +1,30 @@
+LLPP\MyTestBundle\Entity\PhpbbCategories:
+    type: entity
+    table: phpbb_categories
+    indexes:
+        cat_order:
+            columns:
+                - cat_order
+    id:
+        catId:
+            type: integer
+            nullable: false
+            unsigned: true
+            id: true
+            column: cat_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        catTitle:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            column: cat_title
+        catOrder:
+            type: integer
+            nullable: false
+            unsigned: true
+            default: '0'
+            column: cat_order
+    lifecycleCallbacks: {  }

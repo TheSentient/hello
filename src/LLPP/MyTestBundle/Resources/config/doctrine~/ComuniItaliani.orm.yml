@@ -1,0 +1,33 @@
+LLPP\MyTestBundle\Entity\ComuniItaliani:
+    type: entity
+    table: comuni_italiani
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        comune:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+        prov:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+        cap:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+        regione:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+    lifecycleCallbacks: {  }

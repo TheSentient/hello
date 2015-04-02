@@ -1,0 +1,29 @@
+{% extends "LLPPIndexBundle::Template/index.html.twig" %}
+{% set pagine = ["Ambiente", "Antincendio", "Architettura", "Catasto", "Comunicati", "Condominio", "Energia", "Formazione", "Impianti"] %}
+
+{% block page_header %}
+<div class="page-header custom-border">
+  <div id="superbanner" class="row banner no-margin">
+    <img src="http://placehold.it/940x60/f8ed31/000&text=superbanner+940x60" alt="Super Banner"></img>
+  </div>
+  <div class="row no-margin">
+    <div id="main-logo" class="banner">
+  	  <img src="{{ asset('assets/immagini/logo.png') }}" alt="Lavori Pubblici Logo" />
+    </div>
+  	<div id="top-banner" class="banner">
+  	  <img src="http://placehold.it/310x70/f8ed31/000&text=top+banner+310x70" alt="Top Banner"></img>
+    </div>
+  	<div id="today-data-display">Oggi è il <time datetime="{{ "now" | date('d-m-Y') }}">{{ "now" | date('d F Y') }}</time></div>
+  </div>
+</div>
+
+<ul class="nav nav-pills">
+{% for pagina in pagine %}
+  <li role="presentation" class="active"><a href="#"><span class="list-decoration"></span> {{pagina}}</a></li>
+{% endfor %}
+</ul>
+
+<div id="fullbanner" class="row banner no-margin">
+  <img src="http://placehold.it/940x60/f8ed31/000&text=fullbanner+940x60" alt="Full Banner"></img>
+</div>
+{% endblock %}

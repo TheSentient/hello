@@ -1,0 +1,57 @@
+/** Bootstrap overriding **/
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus
+    color: $head-color !important
+    background: none !important
+    +single-transition(all, 0.2s, false, false)
+
+.nav-pills > li.active > a:hover
+    color: #9C9C9C !important
+
+.nav > li > a
+    padding: 10px 14px !important
+
+.row
+    margin-left: 0 !important
+    margin-right: 0 !important
+    margin-bottom: 20px
+/* End Bootstrap */
+
+#page-content
+    display: inline-block
+    float: left
+    width: 100%
+    
+.page-header
+    position: relative
+    padding-bottom: 0 !important
+    margin: 30px 0px 0
+    border: none !important
+    display: inline-block
+    float: left
+    +custom-border(bottom)
+    .row
+        position: relative
+
+#today-data-display
+    +journal-font-style(400)
+    position: absolute
+    bottom: -5px
+
+.banner
+    display: inline-block
+    float: left
+    img
+        width: 100%
+
+#main-logo
+    max-width: 610px !important
+
+.list-decoration
+    display: inline-block
+    width: 7px
+    height: 7px
+    +background-image(linear-gradient(to right, #ccc, #fff))
+
+#top-banner
+    margin-left: 20px
+    max-width: 310px !important

@@ -1,0 +1,27 @@
+LLPP\MyTestBundle\Entity\TariffeBodies:
+    type: entity
+    table: tariffe_bodies
+    indexes:
+        thread:
+            columns:
+                - thread
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: true
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        body:
+            type: text
+            nullable: false
+            length: 65535
+            fixed: false
+        thread:
+            type: integer
+            nullable: false
+            unsigned: true
+            default: '0'
+    lifecycleCallbacks: {  }

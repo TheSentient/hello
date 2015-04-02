@@ -1,0 +1,28 @@
+LLPP\MyTestBundle\Entity\Banditipologia:
+    type: entity
+    table: bandiTipologia
+    id:
+        idtipologia:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: idTipologia
+            generator:
+                strategy: IDENTITY
+    fields:
+        categoria:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        sottocategoria:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        ordine:
+            type: integer
+            nullable: true
+            unsigned: false
+    lifecycleCallbacks: {  }

@@ -1,0 +1,48 @@
+LLPP\MyTestBundle\Entity\PhpbbGroups:
+    type: entity
+    table: phpbb_groups
+    indexes:
+        group_single_user:
+            columns:
+                - group_single_user
+    id:
+        groupId:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: group_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        groupType:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: group_type
+        groupName:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            default: ''
+            column: group_name
+        groupDescription:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: group_description
+        groupModerator:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: group_moderator
+        groupSingleUser:
+            type: boolean
+            nullable: false
+            default: '1'
+            column: group_single_user
+    lifecycleCallbacks: {  }

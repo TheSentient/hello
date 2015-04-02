@@ -1,0 +1,23 @@
+LLPP\MyTestBundle\Entity\ExportNewsletterProva:
+    type: entity
+    table: export_newsletter_PROVA
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        indirizzo:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+        nominativo:
+            type: string
+            nullable: true
+            length: 250
+            fixed: false
+    lifecycleCallbacks: {  }

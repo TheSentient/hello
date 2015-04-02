@@ -1,0 +1,25 @@
+LLPP\JournalBundle\Entity\Migrations:
+    type: entity
+    table: null
+    repositoryClass: LLPP\JournalBundle\Entity\MigrationsRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        entityNsA:
+            type: string
+            column: entity_ns_a
+            length: 255
+        idA:
+            type: integer
+            column: id_a
+        entityNsB:
+            type: string
+            column: entity_ns_b
+            length: 255
+        idB:
+            type: integer
+    lifecycleCallbacks: {  }

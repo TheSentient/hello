@@ -1,0 +1,48 @@
+LLPP\MyTestBundle\Entity\Archivioprofessionistipost:
+    type: entity
+    table: archivioProfessionistiPost
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        guid:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+        idprofessionista:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idProfessionista
+        guidprofessionista:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            column: guidProfessionista
+        titolo:
+            type: string
+            nullable: true
+            length: 90
+            fixed: false
+        testo:
+            type: text
+            nullable: true
+            length: null
+            fixed: false
+        creazione:
+            type: datetime
+            nullable: true
+        like:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+    lifecycleCallbacks: {  }

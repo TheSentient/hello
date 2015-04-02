@@ -1,0 +1,66 @@
+LLPP\JournalBundle\Entity\CorsoFormazione:
+    type: entity
+    table: null
+    repositoryClass: LLPP\JournalBundle\Entity\CorsoFormazioneRepository
+    manyToMany:
+        linksCorrelati:
+            targetEntity: LinkCorrelato
+            inversedBy: corsi
+            joinTable:
+                name: corsi_linkscorrelati
+                joinColumns:
+                    corso_id:
+                        referencedColumnName: id
+                inverseJoinColumns:
+                    linkcorrelato_id:
+                        referencedColumnName: id
+        filesAllegati:
+            targetEntity: FileAllegato
+            inversedBy: corsi
+            joinTable:
+                name: corsi_filesallegati
+                joinColumns:
+                    corso_id:
+                        referencedColumnName: id
+                inverseJoinColumns:
+                    fileallegato_id:
+                        referencedColumnName: id
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        titolo:
+            type: string
+            length: 255
+        modalita:
+            type: string
+            length: 255
+        durata:
+            type: string
+            length: 255
+        dataInizio:
+            type: date
+        dataFine:
+            type: date
+        descrizione:
+            type: text
+        cfp:
+            type: integer
+        enteEsterno:
+            type: string
+            length: 255
+        quotaIscrizione:
+            type: decimal
+        sede:
+            type: string
+            length: 255
+        fotoUrl:
+            type: string
+            length: 255
+        argomento:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

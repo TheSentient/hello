@@ -1,0 +1,24 @@
+LLPP\MyTestBundle\Entity\Storesondaggio:
+    type: entity
+    table: storeSondaggio
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idsondaggio:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idSondaggio
+        idutente:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idUtente
+    lifecycleCallbacks: {  }

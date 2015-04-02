@@ -1,0 +1,34 @@
+LLPP\MyTestBundle\Entity\EbookDownload:
+    type: entity
+    table: ebook_download
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        userId:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: user_id
+        isbn:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        key:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        downloadTime:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+            column: download_time
+    lifecycleCallbacks: {  }
